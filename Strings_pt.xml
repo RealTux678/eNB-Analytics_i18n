@@ -1,0 +1,319 @@
+<resources>
+    <string name="app_name">eNB Analytics</string>
+
+    <!-- Navigation Drawer -->
+    <string name="nav_monitor">Monitor</string>
+    <string name="nav_drive">Modo Automóvel</string>
+    <string name="nav_discover">Mapa local</string>
+    <string name="nav_journal">Registos</string>
+    <string name="nav_web">Mapa online</string>
+    <string name="action_settings">Definições</string>
+    <string name="nav_export">Exportar / Partilhar</string>
+    <string name="nav_bdd">Bases de dados</string>
+    <string name="nav_collection">Identificações</string>
+
+    <!-- Option Menu -->
+    <string name="action_analysis">Analisar</string>
+    <string name="action_always_on">Sempre ativo</string>
+    <string name="action_hud">Head-up Display</string>
+    <string name="action_traces">Reg. Traços TA</string>
+    <string name="action_submenu_more">Mais...</string>
+    <string name="action_submenu_advanced">Avançado...</string>
+    <string name="action_submenu_backup">Cópia de segurança...</string>
+    <string name="action_submenu_restore">Restauração...</string>
+    <string name="action_about">Acerca de</string>
+    <string name="action_radio_menu">Informações do telemóvel</string>
+    <string name="action_calc">Cálculo LCID &lt;-&gt; e/gNB</string>
+    <string name="action_search_local">Pesquisa local</string>
+    <string name="action_files">Gestor de ficheiros</string>
+    <string name="action_radio_debug">Dados de rádio</string>
+    <string name="action_nearby">À minha volta</string>
+    <string name="action_info">Informações</string>
+    <string name="action_import_cell">Importar células</string>
+    <string name="action_delete_cell">Apagar células</string>
+    <string name="action_weather">Dados meteorológicos</string>
+    <string name="action_usage_position">Usar posição</string>
+    <string name="action_share">Partilhar</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="action_filter">Filtro</string>
+    <string name="action_quit">Sair</string>
+
+    <!-- Settings -->
+    <string name="sub_settings_main">Geral</string>
+    <string name="sub_settings_monitor_map">Monitor / Mapa local</string>
+    <string name="sub_settings_expert">Especialista</string>
+    <string name="setting_pseudo_header">Nick</string>
+    <string name="setting_pseudo_descr">Para se identificar como contribuidor</string>
+    <string name="setting_theme_header">Tema</string>
+    <string name="setting_theme_follow_system">Siga o sistema</string>
+    <string name="setting_theme_light">Claro</string>
+    <string name="setting_theme_dark">Escuro</string>
+    <string name="setting_update_header">Verificar atualizações</string>
+    <string name="setting_update_descr">Verificar periodicamente se existe uma actualização para a aplicação</string>
+    <string name="setting_nostandby_header">Exibição sempre ativa</string>
+    <string name="setting_nostandby_descr">Impedir que o ecrã entre no modo de espera</string>
+    <string name="setting_nav_app_header">Aplicação para navegação</string>
+    <string name="setting_nav_app_generic_method">Método genérico</string>
+    <string name="setting_dual_sim_header">Gestão Dual SIM</string>
+    <string name="setting_dual_sim_descr">Para poder escolher qual o cartão SIM a utilizar (mesmo que exista apenas um)</string>
+    <string name="setting_sim_to_use_header">SIM a utilizar para análise</string>
+    <string name="setting_dual_monitoring_descr">Monitorize ambos os cartões SIM, se presentes</string>
+    <string name="setting_radio_lib_header">Biblioteca de rádio</string>
+    <string name="setting_radio_lib_descr">Modelo de rádio a utilizar. ATENÇÃO: Alterar esta configuração desnecessariamente pode prejudicar a funcionalidade da aplicação.</string>
+    <string name="setting_radio_delay_header">Período de aquisição</string>
+    <string name="setting_radio_delay_descr">Aumente este valor em caso de LCID ou RSRP vazio/intermitente (Android 10/12+)</string>
+    <string name="setting_ta_header">Conversão LTE TA</string>
+    <string name="setting_ta_descr">Fator de Conversão de Timing Advance</string>
+    <string name="setting_gnb_header">Cálculo gNB 5G-SA \"Standalone\"</string>
+    <string name="setting_gnb_descr">Não se aplica ao 5G NSA (4G+5G)</string>
+    <string name="setting_unstable_header">Função(ões) experimental(ais)</string>
+    <string name="setting_bypass_descr">Se estiver ativado, a aplicação ignorará os resultados do banco de dados</string>
+    <string name="setting_api_key_header">Chave API</string>
+    <string name="setting_api_key_descr">Para se identificar como colaborador do projeto de serviço de localização (opcional)</string>
+    <string name="setting_api_key_descr_err_msg">Formato incorreto (padrão 00000000)</string>
+
+    <!-- Notification -->
+    <string name="notif_record">Gravação em curso</string>
+    <string name="notif_default_text">Toque para voltar à aplicação</string>
+    <string name="notif_button">Parar e sair</string>
+    
+    <!-- GPS State -->
+    <string name="gps_wait">A procurar GPS…</string>
+    <string name="gps_pause">em pausa</string>
+    <string name="gps_old">localização desatualizada</string>
+    <string name="gps_weak">Impreciso</string>
+
+    <!-- Main -->
+    <string name="header_db">Base de dados</string>
+    <string name="header_analytics">Análise local</string>
+    <string name="header_cells">Células capturadas</string>
+    <string name="header_neighbouring">Células vizinhas</string>
+    <string name="main_start">Comece…</string>
+    <string name="main_out_of_service">Sem rede!</string>
+    <string name="main_service_limited">Ligação limitada</string>
+    <string name="main_not_identified">não identificado</string>
+    <string name="main_analyt_hyp">Suposição</string>
+    <string name="main_analyt_ident">Identificado localmente</string>
+    <string name="main_analyt_src">Pesquisar...</string>
+    <string name="main_unsupported_provider">Operadora não suportada</string>
+    <string name="main_radio_menu_alert">Qualquer modificação neste menu pode causar o mau funcionamento do telefone.</string>
+    <string name="main_radio_menu_alert_btn">Vá lá de qualquer maneira</string>
+    <string name="main_support_attributed">Suporte já atribuído a</string>
+    <string name="main_other_hyp">Outra hipótese</string>
+    <string name="main_alert_notif">• A notificação da aplicação não é exibida</string>
+    <string name="main_alert_radio">• Dados de rádio indisponíveis quando o ecrã está desligado</string>
+    <string name="main_alert_unstable">Recurso em desenvolvimento / Para utilizadores avançados</string>
+    <string name="syst_update_dial_title">Atualizar</string>
+    <string name="syst_update_dial_descr">Está disponível uma actualização da aplicação\n\nVisite o site enb-analytics.fr para mais detalhes.</string>
+    <string name="syst_update_toast">Uma actualização da aplicação está disponível!</string>
+    <string name="main_more_details">mais detalhes</string>
+    <string name="syst_no_internet_toast">Sem ligação à Internet. \nVerifique as definições de rede móvel ou WIFI</string>
+    <string name="syst_fonct_indisp_region">Função não disponível nesta região</string>
+    <string name="main_no_data_at_time">Dados não disponíveis de momento</string>
+    <string name="main_calc_title">Calculadora</string>
+    <string name="main_permission_info">Desde o Android 8.1, a localização deve estar ativada para permitir a leitura das informações rádio</string>
+    <string name="main_funct_unavailable">Função indisponível</string>
+    <string name="main_no_data_to_analyse">Nenhum dado para analisar</string>
+    <string name="main_no_tower_to_analyse">Nenhum suporte para analisar</string>
+    <string name="main_trace_recorded">Registo gravado</string>
+    <string name="main_no_trace">Nenhum ponto TA disponível</string>
+    <string name="main_service_stopped">Serviço rádio parado</string>
+    <string name="main_no_permission_gps">Permissão de localização exata recusada</string>
+    <string name="main_no_permission_phone">Permissão de telefone recusada</string>
+    <string name="main_permission_msg1">Depois de concedidas as permissões, é necessário sair e reiniciar a aplicação</string>
+    <string name="main_permission_msg2">Para que a aplicação funcione, as permissões têm de ser concedidas</string>
+    <string name="main_identified">identificado com sucesso!</string>
+    <string name="main_attributed">atribuído</string>
+    <string name="main_clash_attr">já atribuído</string>        <!-- Support déjà attribué -->
+    <string name="main_clash_ident">já identificado</string>    <!-- eNB déjà identifié -->
+    <string name="main_copied_to_clipboard">Copiado para a área de transferência!</string>
+    <string name="main_about_text">Esta aplicação permite recolher registos e tentar identificar antenas de telemóveis 4G/5G.\n\nA metodologia de localização nunca pode ser 100% fiável\n\nCaso encontre alguma dificuldade ou tenha algum comentário, por favor contacte-me através do Twitter X (@enbanalytics) por DM ou e-mail: enb.analytics@gmail.com</string>
+
+
+    <!-- Discover -->
+    <string name="discover_no_towers">Não existem antenas nesta área</string>
+    <string name="configure_display_title">Configurar visualização</string>
+    <string name="discover_ta_msg_info">Alterar o fator de conversão TA aqui não será guardado. Assim que o valor correto for determinado, esta definição terá de ser definida nos parâmetros.</string>
+    <string name="discover_settings_disp_all_sects">Todos os setores (!)</string>
+    <string name="discover_settings_disp_all">Todos</string>
+    <string name="discover_settings_disp_enb">e/gNB atual</string>
+    <string name="discover_settings_links">Campos</string>
+    <string name="discover_settings_ta_circle">Círculo TA</string>
+
+    <!-- Journal -->
+    <string name="jnl_mbs_delete_cell">"   Apagar esta célula"</string>
+    <string name="jnl_mbs_delete_pos">Apagar posição</string>
+    <string name="jnl_mbs_shared">Compartilh.</string> <!-- //TODO Compartilhamento -->
+    <string name="jnl_mbs_validate_hyp">"   Validar a hipótese (identificar)"</string>
+    <string name="jnl_mbs_delete_hyp">"   Apagar a hipótese"</string>
+    <string name="jnl_mbs_delete_traces">Eliminar registos TA</string>
+    <string name="jnl_mbs_delete_obs">Eliminar observação</string>
+    <string name="jnl_mbs_delete_last_obs">Elim. última observação</string>
+    <string name="jnl_mbs_capture">Capturar</string>			               <!-- max 12 caractères -->
+    <string name="jnl_mbs_first_date">1ª visita</string>
+    <string name="jnl_mbs_last_date">Visitado</string>
+    <string name="jnl_delete_msg_p1">A célula</string>
+    <string name="jnl_delete_msg_p2">será eliminada em alguns segundos</string>
+
+    <string name="jnl_sort_date">Por data (padrão)</string>
+    <string name="jnl_sort_egnb">Por e/gNB</string>
+    <string name="jnl_sort_provider">Por operador</string>
+    <string name="jnl_sort_signal">Intensidade do sinal</string>
+    <string name="jnl_sort_not_shared">Não partilhado</string>
+    <string name="jnl_overflow_display_all">Veja o jornal completo</string>
+    <string name="jnl_overflow_display_more">Ver mais</string>
+    <string name="jnl_overflow_display_xxx_cells">Mostrar todas as</string>
+    <string name="jnl_no_position">nenhuma geolocalização disponível</string>
+
+    <!-- Check BDD -->
+    <string name="ck_bdd_btn_download">Baixar</string>
+    <string name="ck_bdd_no_network">Sem ligação de internet.\nVerifique as definições de rede móvel ou WIFI</string>
+    <string name="ck_bdd_updatde_available">Atualização disponível</string>
+    <string name="ck_bdd_up_to_date">Atualizado</string>
+    <string name="ck_bdd_do_update">Para atualizar</string>
+    
+    <!-- Export -->
+    <string name="exp_header_upload">Partilha online</string>
+    <string name="exp_ea">Exportação EA em curso...</string>
+    <string name="exp_ea1">1/2 Preparação dos dados</string>
+    <string name="exp_ea2">2/2 Upload para enb-analytics.fr</string>
+    <string name="exp_new_cells">novas células</string>
+    <string name="exp_nm_progress">Exportação em curso...</string>
+    <string name="exp_ntm">Exportação no formato NetMonster</string>
+    <string name="cell_telever">células enviadas</string>
+    <string name="cell_export">células escritas</string>
+    <string name="data_telever_thanks">Obrigado!</string>
+    <string name="data_telever_snack">partilhadas</string>
+    <string name="data_telever">identificações enviadas</string>
+    <string name="data_nodata">Nenhum dado para enviar</string>
+    <string name="data_nodest">Nenhum destino selecionado</string>
+    <string name="exportTitle">Exportar / Partilhar</string>
+    <string name="exportPseudo">Nick</string>
+    <string name="alert_pseudo">Lembre-se de inserir um Nick nas Definições!</string>
+    <string name="no_cell">nenhuma célula para transmitir</string>
+    <string name="no_data">Base de dados vazia!</string>
+    <string name="cell_collect">células recolhidas</string>
+    <string name="cell_shared">células partilhadas</string>
+    <string name="cell_collect_p2">eNB)</string>
+    <string name="cell_collect_up">para enviar</string>
+    <string name="supp_identif">Identificações</string>
+    <string name="supp_hyp">Hipóteses&#160;&#160;(</string>
+    <string name="exp_log_send">célula(s) para enviar</string>
+    <string name="exp_log_send_new">nova(s) célula(s)</string>
+    <string name="exp_col_send">identificação(ões) para enviar</string>
+    <string name="exp_log_wait">célula(s) disponível(s)</string>
+    <string name="exp_ident_wait">identificação(ões) disponível(s)</string>
+    <string name="exp_data_wait">dado(s) disponível(s)</string>
+    <string name="exp_csv_snack">Dados exportados!</string>
+    <string name="exp_trcs_snack">Dados exportados!</string>
+    <string name="exp_sql_snack">Base SQLite exportada!</string>
+    <string name="exp_error">erro</string>
+
+    <!-- Carte WEB -->
+    <string name="web_perm_error">Erro. As permissões são concedidas?</string>
+    <string name="web_no_position">Uso de cargo negado</string>
+    <string name="web_connect">Ligação...</string>
+    <string name="web_no_location">Localização impossível. Utilizando a última posição conhecida.</string>
+    <string name="web_change_map">Alterar operador</string>
+    <string name="web_type_error">Erro na entrada</string>
+    <string name="web_dialog_confid">Gostaria de partilhar a sua geolocalização através da consulta para que o mapa fique diretamente centrado na sua área? Estes dados não são armazenados nem transmitidos a terceiros.</string>
+    <string name="web_dialog_confid_rememore">Memorize a minha escolha e não volte a perguntar</string>
+    <string name="web_search">Procure um eNB</string>
+    <string name="web_no_data_msg">Zona livre de dados. Qualquer partilha de registos é bem-vinda. É a sua vez!</string>
+
+    <!-- EA Stumbler -->
+    <string name="stumbler_btn_txt">Ativar gravação de observação</string>
+    <string name="stumbler_display_today">Dados de hoje</string>
+    <string name="stumbler_abstract">observação(s). Hoje :</string>
+    <string name="stumbler_rest2send">Ainda para enviar :</string>
+    <string name="stumbler_rest2exp">Restos a exportar :</string>
+    <string name="stumbler_send">&#160;&#160;&#160;&#160;Enviar</string>
+    <string name="stumbler_export">&#160;&#160;&#160;&#160;Exportar</string>
+    <string name="stumbler_configure_up_title">Configurar envio</string>
+
+    <!-- Analytics -->
+    <string name="aa_not_identified">não identificado</string>
+    <string name="aa_found_single">encontrar</string>
+    <string name="aa_found">encontrado</string>
+    <string name="aa_no_data">Nenhum dado</string>
+    <string name="aa_weak_data">Dados insuficientes</string>
+    <string name="aa_ambiguous">Ambiguidade</string>
+
+    <!-- Analyse/identification -->
+    <string name="id_rech_create">Criar novo suporte</string>
+    <string name="id_rech_gps">Pesquisar via GPS</string>
+    <string name="id_rech_manu">Pesquisa manual</string>
+    <string name="id_rech_mlsp">Investigação especializada MLS dados</string>
+    <string name="id_rech_fu">Pesquisar através de dados LOG/MLS</string>
+    <string name="id_rech_ta">Pesquisar através de dados de TA</string>
+
+    <!-- File explorer -->
+    <string name="file_expl_open_text">Ver (como texto)</string>
+    <string name="file_expl_open_csv">Ver (CSV)</string>
+    <string name="file_expl_items">elementos</string>
+    <string name="file_expl_parent_folder">Pasta pai</string>
+
+    <!-- Miscellaneous -->
+    <string name="misc_yes">Sim</string>
+    <string name="misc_no">Não</string>
+    <string name="misc_cancel">Cancelar</string>
+    <string name="misc_close">Fechar</string>
+    <string name="misc_record">Guardar</string>
+    <string name="misc_validate">Validar</string>
+    <string name="misc_continue">Continuar</string>
+    <string name="misc_delete">Para apagar</string>
+    <string name="misc_cell">célula</string>
+    <string name="misc_cells">células</string>
+    <string name="misc_support">Suporte</string>
+    <string name="misc_supports">Suportes</string>
+    <string name="misc_confident">Confidencialidade</string>
+    <string name="misc_order_mode">Modo de classificação</string>
+    <string name="misc_search">Para pesquisar</string>
+    <string name="misc_searching">A pesquisar…</string>
+    <string name="misc_file_incorrect">Ficheiro incorreto</string>
+    <string name="misc_file_format_mismatch">Formato de ficheiro incorreto</string>
+    <string name="misc_pause">Quebrar</string>
+    <string name="misc_auto">Automático</string>
+    <string name="misc_towers">Antenas</string>
+    <string name="misc_provider">Operadora</string>
+    <string name="misc_position">Posição</string>
+    <string name="misc_catched">Capturado</string>
+    <string name="misc_shared">Partilhado</string>
+    <string name="misc_sim_empty">Ausente</string>
+    <string name="misc_disabled">Desativado</string>
+    <string name="misc_sector_s">setor(es)</string>
+    <string name="misc_ta_traces">registos TA</string>
+    <string name="misc_display">Mostrar</string>
+
+    <!-- Density -->
+    <string name="density_mbs_area">Zona</string>
+    <string name="density_mbs_freq_per_tower">Freq/Sup.</string>
+    <string name="density_mbs_dbm_moy">dBm médio</string>
+    <string name="density_mbs_progress">Progresso</string>
+    <string name="density_0">zona muito pouco densa</string>
+    <string name="density_2">zona pouco densa</string>
+    <string name="density_7">zona moderadamente densa</string>
+    <string name="density_9">zona densa</string>
+    <string name="density_18">zona muito densa</string>
+    <string name="density_60">zona hiper densa</string>
+    <string name="density_99">zona hiper densa extrema</string>
+
+    <!-- Geo -->
+    <string name="bearing_n">Norte</string>
+    <string name="bearing_ne">N‑E</string>
+    <string name="bearing_e">Este</string>
+    <string name="bearing_se">S‑E</string>
+    <string name="bearing_s">Sul</string>
+    <string name="bearing_sw">S‑O</string>
+    <string name="bearing_w">Oeste</string>
+    <string name="bearing_nw">N‑O</string>
+
+    <!-- First launch -->
+    <string name="first_welcome">Bem-vindo !</string>
+    <string name="first_permissions">Pedir permissões</string>
+    <string name="first_screen_p2">Esta aplicação permite tentar localizar antenas móveis 4G e 5G utilizando a base Mozilla Location Services e as suas próprias células capturadas no terreno com o GPS do seu telefone: quanto mais dados captar, mais precisas se tornam as hipóteses apresentadas.</string>
+    <string name="first_screen_p2_bis">A aplicação apresentará hipóteses nem sempre fiáveis no início, pois depende dos dados disponíveis. Estas hipóteses serão recalculadas automaticamente à medida que avança; daí a importância de capturar novos dados e não se precipitar para &quot;identificar&quot;.</string>
+    <string name="first_screen_p3">Sem dados, esta aplicação e o projeto não existiriam. É aconselhável partilhar as suas células para que outros utilizadores da aplicação e/ou visitantes do site possam beneficiar delas.</string>
+    <string name="first_screen_p4">Esta aplicação precisa das permissões de localização exata e Chamadas telefónicas para permitir o monitorização rádio e geolocalizar as células capturadas.</string>
+    <string name="first_screen_p5">A localização é utilizada apenas quando o registo está ativo. É apresentada uma notificação para o informar.</string>
+</resources>
