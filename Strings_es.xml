@@ -194,6 +194,7 @@
     <string name="ck_bdd_updatde_available">Actualización disponible</string>
     <string name="ck_bdd_up_to_date">Base de datos actualizada</string>
     <string name="ck_bdd_do_update">Actualizar</string>
+    <string name="ck_bdd_header_towers">@string/misc_towers</string>
 
     <!-- Export -->
     <string name="exp_header_upload">Compartir en línea</string>
