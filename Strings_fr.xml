@@ -193,6 +193,7 @@
     <string name="ck_bdd_updatde_available">Mise à jour disponible</string>
     <string name="ck_bdd_up_to_date">Base à jour</string>
     <string name="ck_bdd_do_update">Mettre à jour</string>
+    <string name="ck_bdd_header_towers">ANFR</string>
 
     <!-- Export -->
     <string name="exp_header_upload">Partage en ligne</string>
