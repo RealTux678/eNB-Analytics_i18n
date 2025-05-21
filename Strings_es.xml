@@ -20,15 +20,15 @@
     <string name="action_submenu_more">Más...</string>
     <string name="action_submenu_advanced">Avanzado...</string>
     <string name="action_submenu_backup">Guardar...</string>
-    <string name="action_submenu_restore">Restauración...</string>
-    <string name="action_about">A propósito</string>
-    <string name="action_radio_menu">Informaciones teléfono</string>
+    <string name="action_submenu_restore">Restaurar...</string>
+    <string name="action_about">Acerca de</string>
+    <string name="action_radio_menu">Información del teléfono</string>
     <string name="action_calc">Cálculo LCID &lt;-&gt; e/gNB</string>
     <string name="action_search_local">Búsqueda local</string>
     <string name="action_files">Explorador de archivos</string>
     <string name="action_radio_debug">Datos radio</string>
     <string name="action_nearby">Alrededor de mí</string>
-    <string name="action_info">Informaciones</string>
+    <string name="action_info">Información</string>
     <string name="action_import_cell">Importación celdas</string>
     <string name="action_delete_cell">Borrar celdas</string>
     <string name="action_weather">Meteo de datos</string>
@@ -112,16 +112,16 @@
     <string name="main_no_data_at_time">Datos no disponibles en este momento</string>
     <string name="main_calc_title">Calculadora</string>
     <string name="main_permission_info">A partir de Android 8.1 la localización debe estar habilitada para permitir la lectura de las informaciones radio</string>
-    <string name="main_funct_unavailable">Función indisponible</string>
-    <string name="main_no_data_to_analyse">No datos a analizar</string>
-    <string name="main_no_tower_to_analyse">No soporte a analizar</string>
+    <string name="main_funct_unavailable">Función no disponible</string>
+    <string name="main_no_data_to_analyse">Sin datos a analizar</string>
+    <string name="main_no_tower_to_analyse">Sin soporte a analizar</string>
     <string name="main_trace_recorded">Traza grabada</string>
     <string name="main_no_trace">Ningún punto TA disponible</string>
-    <string name="main_service_stopped">Servicio radio interrumpido</string>
-    <string name="main_no_permission_gps">Permiso localización exacta denegado</string>
+    <string name="main_service_stopped">Servicio de radio interrumpido</string>
+    <string name="main_no_permission_gps">Permiso localización exacta denegada</string>
     <string name="main_no_permission_phone">Permiso Telefono denegado</string>
     <string name="main_permission_msg1">Una vez otorgados los permisos, salga de la aplicación y vuelva a iniciarla</string>
-    <string name="main_permission_msg2">Para que la aplicación funcione, deben otorgar los permisos</string>
+    <string name="main_permission_msg2">Para que la aplicación funcione, debe otorgar los permisos</string>
     <string name="main_identified">identificado con éxito!</string>
     <string name="main_attributed">atribuido</string>
     <string name="main_clash_attr">ya atribuido</string> <!-- Support s<dfherkj déjà attribué -->
@@ -131,18 +131,18 @@
 
 
     <!-- Discover -->
-    <string name="discover_no_towers">No datos en esta zona</string>
+    <string name="discover_no_towers">Sin datos en esta zona</string>
     <string name="configure_display_title">Configurar la pantalla</string>
     <string name="discover_ta_msg_info">Los cambios en el factor de conversión TA no se guardarán. Una vez determinado el valor correcto, deberá configurarse en los parámetros.</string>
     <string name="discover_settings_disp_all_sects">Todos los sectores (!)</string>
     <string name="discover_settings_disp_all">Todo</string>
-    <string name="discover_settings_disp_enb">corriente e/gNB</string>
+    <string name="discover_settings_disp_enb">e/gNB actual</string>
     <string name="discover_settings_links">Campo</string>
     <string name="discover_settings_ta_circle">Círculo TA</string>
 
     <!-- Journal -->
     <!--<string name="jnl_mbs_delete_cell">"   Borrar esta celda"</string>-->
-    <string name="jnl_mbs_delete_cell">"   Afuera !"</string>
+    <string name="jnl_mbs_delete_cell">"   ¡ Eliminar !"</string>
     <string name="jnl_mbs_delete_pos">Borrar la posición</string>
     <string name="jnl_mbs_shared">Compartido</string>
     <string name="jnl_mbs_validate_hyp">"   Validar la hipótesis (identificar)"</string>	<!-- préserver les 3 espaces devant -->
@@ -190,7 +190,7 @@
 
     <!-- Check BDD -->
     <string name="ck_bdd_btn_download">Descargar</string>
-    <string name="ck_bdd_no_network">Sin conexión Internet.\nRevisa la configuración red móvil o WIFI</string>
+    <string name="ck_bdd_no_network">Sin conexión a Internet.\nRevisa la configuración red móvil o WIFI</string>
     <string name="ck_bdd_updatde_available">Actualización disponible</string>
     <string name="ck_bdd_up_to_date">Base de datos actualizada</string>
     <string name="ck_bdd_do_update">Actualizar</string>
@@ -199,7 +199,7 @@
     <string name="exp_header_upload">Compartir en línea</string>
     <string name="exp_ea">Exportación EA en curso...</string>
     <string name="exp_ea1">1/2 Preparación de datos</string>
-    <string name="exp_ea2">2/2 Upload a enb-analytics.fr</string>
+    <string name="exp_ea2">2/2 Enviar a enb-analytics.fr</string>
     <string name="exp_new_cells">nuevas celdas</string>
     <string name="exp_nm_progress">Exportación en curso...</string>
     <string name="exp_ntm">Exportación en formato NetMonster</string>
@@ -249,8 +249,8 @@
     <string name="id_rech_ta">Búsqueda a través de datos TA</string>
 
     <!-- File explorer -->
-    <string name="file_expl_open_text">Voir (Texte)</string>
-    <string name="file_expl_open_csv">Voir (CSV)</string>
+    <string name="file_expl_open_text">Ver (Texte)</string>
+    <string name="file_expl_open_csv">Ver (CSV)</string>
     <string name="file_expl_items">elementos</string>
     <string name="file_expl_parent_folder">Carpeta principal</string>
 
@@ -273,7 +273,7 @@
     <string name="misc_searching">Buscar…</string>
     <string name="misc_file_incorrect">Archivo incorrecto</string>
     <string name="misc_file_format_mismatch">Formato de archivo incorrecto</string>
-    <string name="misc_pause">Romper</string>
+    <string name="misc_pause">Pausar</string>
     <string name="misc_auto">Automático</string>
     <string name="misc_towers">Antenas</string>
     <string name="misc_sector_s">sector(es)</string>
@@ -310,7 +310,7 @@
     <string name="bearing_nw">N-O</string>
 
     <!-- First launch -->
-    <string name="first_welcome">Bienvenido !</string>
+    <string name="first_welcome">¡Bienvenido!</string>
     <string name="first_permissions">Solicitar los permisos</string>
     <string name="first_screen_p2">Esta aplicación te permite intentar localizar antenas móviles 4G y 5G utilizando la base de datos de Mozilla Location Services y tus propias celdas captadas sobre el terreno con el GPS de tu teléfono: cuantos más datos captures, más precisas serán las hipótesis mostradas.</string>
     <string name="first_screen_p2_bis">La aplicación mostrará supuestos que no son necesariamente fiables al principio, ya que dependen de los datos disponibles. Estos supuestos se recalcularán automáticamente a medida que avance; de ahí la importancia de capturar nuevos datos y no precipitarse a &quot;identificar&quot;.</string>
