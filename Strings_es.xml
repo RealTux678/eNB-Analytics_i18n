@@ -27,7 +27,7 @@
     <string name="action_search_local">Búsqueda local</string>
     <string name="action_files">Explorador de archivos</string>
     <string name="action_radio_debug">Datos radio</string>
-    <string name="action_nearby">Alrededor de mí</string>
+    <string name="action_nearby">Alrededor de mí posición</string>
     <string name="action_info">Información</string>
     <string name="action_import_cell">Importación celdas</string>
     <string name="action_delete_cell">Borrar celdas</string>
@@ -75,7 +75,7 @@
     <!-- Notification -->
     <string name="notif_record">Grabación en curso</string>
     <string name="notif_default_text">Pulse para volver a la aplicación</string>
-    <string name="notif_button">Parar y salir</string>
+    <string name="notif_button">Detener y salir</string>
 
     <!-- GPS State -->
     <string name="gps_wait">esperando fix</string>
@@ -84,7 +84,7 @@
     <string name="gps_weak">Impreciso</string>
 
     <!-- Main -->
-    <string name="header_db">Base</string>
+    <string name="header_db">Base de datos</string>
     <string name="header_analytics">Análisis local</string>
     <string name="header_cells">Celdas capturadas</string>
     <string name="header_neighbouring">Celdas vecinas</string>
@@ -249,7 +249,7 @@
     <string name="id_rech_ta">Búsqueda a través de datos TA</string>
 
     <!-- File explorer -->
-    <string name="file_expl_open_text">Ver (Texte)</string>
+    <string name="file_expl_open_text">Ver (Texto)</string>
     <string name="file_expl_open_csv">Ver (CSV)</string>
     <string name="file_expl_items">elementos</string>
     <string name="file_expl_parent_folder">Carpeta principal</string>
