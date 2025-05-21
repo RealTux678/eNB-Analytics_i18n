@@ -171,6 +171,7 @@
     <string name="ck_bdd_updatde_available">Atualização disponível</string>
     <string name="ck_bdd_up_to_date">Atualizado</string>
     <string name="ck_bdd_do_update">Para atualizar</string>
+    <string name="ck_bdd_header_towers">@string/misc_towers</string>
     
     <!-- Export -->
     <string name="exp_header_upload">Partilha online</string>
