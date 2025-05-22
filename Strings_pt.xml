@@ -78,9 +78,9 @@
     <string name="notif_button">Parar e sair</string>
     
     <!-- GPS State -->
-    <string name="gps_wait">A procurar GPS…</string>
-    <string name="gps_pause">em pausa</string>
-    <string name="gps_old">localização desatualizada</string>
+    <string name="gps_wait">A procurar……</string>
+    <string name="gps_pause">Pausa</string>
+    <string name="gps_old">Loc antiga</string>
     <string name="gps_weak">Impreciso</string>
 
     <!-- Main -->
