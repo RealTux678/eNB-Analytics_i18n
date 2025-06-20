@@ -303,7 +303,7 @@
     <string name="misc_sector_s">secteur(s)</string>
     <string name="misc_ta_traces">Traces TA</string>
     <string name="misc_display">Afficher</string>
-    <string name="exp_error">Erreur</string>
+    <string name="misc_error">Erreur</string>
     <string name="misc_custom_server">Serveur personnalisé</string>
     <string name="misc_freq_approved">projet approuvé</string>
     <string name="misc_freq_activated">activé le</string>
