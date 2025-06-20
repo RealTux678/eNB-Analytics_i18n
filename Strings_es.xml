@@ -297,7 +297,7 @@
     <string name="misc_disabled">Desactivado</string>
     <string name="misc_ta_traces">Trazas TA</string>
     <string name="misc_display">Mostrar</string>
-    <string name="exp_error">Error</string>
+    <string name="misc_error">Error</string>
     <string name="misc_custom_server">Servidor personalizado</string>
     <string name="misc_freq_approved">proyecto aprobado</string>
     <string name="misc_freq_activated">activado el</string>
