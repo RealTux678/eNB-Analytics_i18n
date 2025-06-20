@@ -71,6 +71,12 @@
     <string name="setting_api_key_header">Chave API</string>
     <string name="setting_api_key_descr">Para se identificar como colaborador do projeto de serviço de localização (opcional)</string>
     <string name="setting_api_key_descr_err_msg">Formato incorreto (padrão 00000000)</string>
+    <string name="setting_recommended_setting">Configuração recomendada:</string>
+    <string name="setting_msg_pseudo_length">O apelido está limitado a 20 caracteres</string>
+    <string name="setting_sourcelist_header">Servidor de download</string>
+    <string name="setting_bdd_source_path">URL do servidor personalizado</string>
+    <string name="setting_bdd_source_path_descr">URL para o ficheiro de índice</string>
+    <string name="setting_unstable_descr">Ative recursos em desenvolvimento. Atenção: Risco de bloqueio, perda de dados, etc.</string>
 
     <!-- Notification -->
     <string name="notif_record">Gravação em curso</string>
@@ -128,7 +134,7 @@
     <string name="main_clash_ident">já identificado</string>    <!-- eNB déjà identifié -->
     <string name="main_copied_to_clipboard">Copiado para a área de transferência!</string>
     <string name="main_about_text">Esta aplicação permite recolher registos e tentar identificar antenas de telemóveis 4G/5G.\n\nA metodologia de localização nunca pode ser 100% fiável\n\nCaso encontre alguma dificuldade ou tenha algum comentário, por favor contacte-me através do Twitter X (@enbanalytics) por DM ou e-mail: enb.analytics@gmail.com</string>
-
+    <string name="main_info_missing_db">Os bancos de dados devem ser descarregados</string>
 
     <!-- Discover -->
     <string name="discover_no_towers">Não existem antenas nesta área</string>
@@ -172,6 +178,11 @@
     <string name="ck_bdd_up_to_date">Atualizado</string>
     <string name="ck_bdd_do_update">Para atualizar</string>
     <string name="ck_bdd_header_towers">@string/misc_towers</string>
+    <string name="ck_bdd_downloading">A descarregar…</string>
+    <string name="ck_bdd_download_ok">Download concluído!</string>
+    <string name="ck_bdd_download_fail">Erro ao descarregar</string>
+    <string name="ck_bdd_db_patching">Inserindo na base de dados…</string>
+    <string name="ck_bdd_info_log_share"><![CDATA[células para Podem ser partilhadas melhorar as bases da comunidade!<br><u>Aceda à função de compartilhamento</u>]]></string>
     
     <!-- Export -->
     <string name="exp_header_upload">Partilha online</string>
@@ -208,7 +219,7 @@
     <string name="exp_csv_snack">Dados exportados!</string>
     <string name="exp_trcs_snack">Dados exportados!</string>
     <string name="exp_sql_snack">Base SQLite exportada!</string>
-    <string name="exp_error">erro</string>
+    <string name="exp_export_info_title">Células partilhadas</string>
 
     <!-- Carte WEB -->
     <string name="web_perm_error">Erro. As permissões são concedidas?</string>
@@ -285,6 +296,12 @@
     <string name="misc_sector_s">setor(es)</string>
     <string name="misc_ta_traces">registos TA</string>
     <string name="misc_display">Mostrar</string>
+    <string name="misc_error">Erro</string>
+    <string name="misc_custom_server">Servidor personalizado</string>
+    <string name="misc_freq_approved">projeto aprovado</string>
+    <string name="misc_freq_activated">ativou o</string>
+    <string name="misc_empty">Vazío</string>
+    <string name="misc_import">Importação</string>
 
     <!-- Density -->
     <string name="density_mbs_area">Zona</string>
