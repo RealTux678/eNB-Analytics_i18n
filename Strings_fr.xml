@@ -133,7 +133,7 @@
     <string name="main_clash_attr">déjà attribué</string>                   <!-- Support s<dfherkj déjà attribué -->
     <string name="main_clash_ident">déjà identifié</string>                 <!-- eNB sdfghrgf déjà identifié -->
     <string name="main_copied_to_clipboard">copié dans le presse-papier !</string>
-    <string name="main_about_text">Cette application permet de collecter des logs et tenter d\'identifier les antennes de téléphonie mobile 4G/5G en France.\n\nLa méthodologie de localisation ne pourra jamais être fiable à 100%\n\nSi vous rencontrez des difficultés ou avez des remarques, contactez moi via Twitter X (@enbanalytics) en DM ou mail: enb.analytics@gmail.com</string>
+    <string name="main_about_text">Cette application permet de collecter des logs et tenter d\'identifier les antennes de téléphonie mobile 4G/5G.\n\nLa méthodologie de localisation ne pourra jamais être fiable à 100%\n\nSi vous rencontrez des difficultés ou avez des remarques, contactez moi via Twitter X (@enbanalytics) en DM ou mail: enb.analytics@gmail.com</string>
     <string name="main_info_missing_db">Des bases de données doivent êtres téléchargées</string>
     <string name="exp_confi_alti">La réalisation du profil altimétrique nécéssite l\'envoi des coordonnées de votre position ainsi que celles de l\'antenne vers le serveur eNB Analytics afin de pouvoir réaliser les calculs.\n\nSouhaitez-vous continuer ?</string>
 
