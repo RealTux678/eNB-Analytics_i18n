@@ -196,7 +196,6 @@
 
     <!-- Check BDD -->
     <string name="ck_bdd_btn_download">Télécharger</string>
-    <string name="ck_bdd_no_network">Aucune connexion internet.\nVérifiez les paramètres réseau mobile ou WIFI</string>
     <string name="ck_bdd_updatde_available">Mise à jour disponible</string>
     <string name="ck_bdd_up_to_date">Base à jour</string>
     <string name="ck_bdd_do_update">Mettre à jour</string>
