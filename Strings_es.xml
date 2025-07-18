@@ -188,11 +188,17 @@
     <string name="stumbler_btn_txt">Activar el registro de observaciones</string>
     <string name="stumbler_display_today">Datos de Hoy</string>
     <string name="stumbler_abstract">observacion(es). Hoy :</string>
+    <string name="stumbler_no_data_today">No hay datos hoy</string>
     <string name="stumbler_rest2send">Queda por enviar :</string>
     <string name="stumbler_rest2exp">Queda por exportar :</string>
     <string name="stumbler_send">&#160;&#160;&#160;&#160;Enviar</string>
     <string name="stumbler_export">&#160;&#160;&#160;&#160;Exportar</string>
     <string name="stumbler_configure_up_title">Configurar el envío</string>
+    <string name="stumbler_upload_error">Error durante el envío</string>
+    <string name="stumbler_upload_limit">Error: Se alcanzó el límite de envíos</string>
+    <string name="stumbler_api_key_error">Error: Clave API incorrecta</string>
+    <string name="stumbler_no_data_here">No hay datos aquí</string>
+    <string name="stumbler_filter_hint">eNB, gNB, CI, TAC o PCI</string>
 
     <!-- Check BDD -->
     <string name="ck_bdd_btn_download">Descargar</string>
@@ -204,6 +210,9 @@
     <string name="ck_bdd_download_ok">¡Descarga completa!</string>
     <string name="ck_bdd_download_fail">Error durante la descarga</string>
     <string name="ck_bdd_db_patching">Inserindo na base de dados…</string>
+    <string name="ck_bdd_db_patching_descr">/!\\ ¡No interrumpas!</string>
+    <string name="ck_bdd_db_patching_patched">Antenas añadidas</string>
+    <string name="ck_bdd_add_local_file">¿Agregar una base de datos desde un archivo local?</string>
     <string name="ck_bdd_info_log_share"><![CDATA[células para compartir para mejorar los cimientos de la comunidad!<br><u>Accede a la función para compartir</u>]]></string>
 
     <!-- Export -->
@@ -222,7 +231,6 @@
     <string name="data_nodata">Sin datos para enviar</string>
     <string name="data_nodest">Ningún destino seleccionado</string>
     <string name="exportTitle">Exportar / Compartir</string>
-    <string name="exportPseudo">Apodo</string>
     <string name="alert_pseudo">Recuerda introducir un apodo en Ajustes.</string>
     <string name="no_cell">Ningún dato que transmitir</string>
     <string name="no_data">¡Base vacía!</string>
@@ -296,12 +304,13 @@
     <string name="misc_disabled">Desactivado</string>
     <string name="misc_ta_traces">Trazas TA</string>
     <string name="misc_display">Mostrar</string>
-    <string name="misc_error">Error</string>
+    <string name="misc_error">error</string>
     <string name="misc_custom_server">Servidor personalizado</string>
     <string name="misc_freq_approved">proyecto aprobado</string>
     <string name="misc_freq_activated">activado el</string>
     <string name="misc_empty">Vacío</string>
     <string name="misc_import">Importar</string>
+    <string name="misc_frequency">Frecuencia</string>
 
     <!-- Density -->
     <string name="density_mbs_area">Zona</string>					<!-- max 12 caractères -->
@@ -334,4 +343,6 @@
     <string name="first_screen_p3">Sin datos, esta aplicación y el proyecto no existirían. Le recomendamos que comparta sus celdas para que otros usuarios de la aplicación y/o visitantes del sitio puedan beneficiarse de ellas.</string>
     <string name="first_screen_p4">Esta aplicación necesita permisos exactos de localización y llamadas telefónicas para permitir la monitorización por radio y la geolocalización de las celdas capturadas.</string>
     <string name="first_screen_p5">La localización sólo se utiliza cuando la grabación está activa. Una notificación te informa de esto.</string>
+
+
 </resources>
