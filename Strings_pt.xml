@@ -181,6 +181,9 @@
     <string name="ck_bdd_download_ok">Download concluído!</string>
     <string name="ck_bdd_download_fail">Erro ao descarregar</string>
     <string name="ck_bdd_db_patching">Inserindo na base de dados…</string>
+    <string name="ck_bdd_db_patching_descr">/!\\ Não interrompa!</string>
+    <string name="ck_bdd_db_patching_patched">Antenas adicionadas</string>
+    <string name="ck_bdd_add_local_file">Adicionar uma base de dados de um ficheiro local?</string>
     <string name="ck_bdd_info_log_share"><![CDATA[células para Podem ser partilhadas melhorar as bases da comunidade!<br><u>Aceda à função de compartilhamento</u>]]></string>
     
     <!-- Export -->
@@ -199,7 +202,6 @@
     <string name="data_nodata">Nenhum dado para enviar</string>
     <string name="data_nodest">Nenhum destino selecionado</string>
     <string name="exportTitle">Exportar / Partilhar</string>
-    <string name="exportPseudo">Nick</string>
     <string name="alert_pseudo">Lembre-se de inserir um Nick nas Definições!</string>
     <string name="no_cell">nenhuma célula para transmitir</string>
     <string name="no_data">Base de dados vazia!</string>
@@ -223,7 +225,7 @@
     <!-- Carte WEB -->
     <string name="web_perm_error">Erro. As permissões são concedidas?</string>
     <string name="web_no_position">Uso de cargo negado</string>
-    <string name="web_connect">Ligação...</string>
+    <string name="web_connect">Ligação…</string>
     <string name="web_no_location">Localização impossível. Utilizando a última posição conhecida.</string>
     <string name="web_change_map">Alterar operador</string>
     <string name="web_type_error">Erro na entrada</string>
@@ -236,11 +238,17 @@
     <string name="stumbler_btn_txt">Ativar gravação de observação</string>
     <string name="stumbler_display_today">Dados de hoje</string>
     <string name="stumbler_abstract">observação(s). Hoje :</string>
+    <string name="stumbler_no_data_today">Não há dados hoje</string>
     <string name="stumbler_rest2send">Ainda para enviar :</string>
     <string name="stumbler_rest2exp">Restos a exportar :</string>
     <string name="stumbler_send">&#160;&#160;&#160;&#160;Enviar</string>
     <string name="stumbler_export">&#160;&#160;&#160;&#160;Exportar</string>
     <string name="stumbler_configure_up_title">Configurar envio</string>
+    <string name="stumbler_upload_error">Erro durante o envio</string>
+    <string name="stumbler_upload_limit">Erro: Limite de envio atingido</string>
+    <string name="stumbler_api_key_error">Erro: Chave API incorreta</string>
+    <string name="stumbler_no_data_here">Não há aqui dados</string>
+    <string name="stumbler_filter_hint">eNB, gNB, CI, TAC ou PCI</string>
 
     <!-- Analytics -->
     <string name="aa_not_identified">não identificado</string>
@@ -295,12 +303,13 @@
     <string name="misc_sector_s">setor(es)</string>
     <string name="misc_ta_traces">registos TA</string>
     <string name="misc_display">Mostrar</string>
-    <string name="misc_error">Erro</string>
+    <string name="misc_error">erro</string>
     <string name="misc_custom_server">Servidor personalizado</string>
     <string name="misc_freq_approved">projeto aprovado</string>
     <string name="misc_freq_activated">ativou o</string>
     <string name="misc_empty">Vazío</string>
     <string name="misc_import">Importação</string>
+    <string name="misc_frequency">Freqüência</string>
 
     <!-- Density -->
     <string name="density_mbs_area">Zona</string>
@@ -333,4 +342,6 @@
     <string name="first_screen_p3">Sem dados, esta aplicação e o projeto não existiriam. É aconselhável partilhar as suas células para que outros utilizadores da aplicação e/ou visitantes do site possam beneficiar delas.</string>
     <string name="first_screen_p4">Esta aplicação precisa das permissões de localização exata e Chamadas telefónicas para permitir o monitorização rádio e geolocalizar as células capturadas.</string>
     <string name="first_screen_p5">A localização é utilizada apenas quando o registo está ativo. É apresentada uma notificação para o informar.</string>
+
+
 </resources>
