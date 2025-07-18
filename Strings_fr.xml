@@ -142,7 +142,7 @@
     <string name="discover_no_towers">Pas de données ANFR sur cette zone</string>
     <string name="configure_display_title">Configurer l\'affichage</string>
     <string name="discover_ta_msg_info">La modification ici du facteur de conversion TA ne sera pas sauvegardée. Une fois la bonne valeur déterminée, il faudra positionner ce réglage dans les paramètres.</string>
-    <string name="discover_settings_disp_all_sects">Tous les secteurs  (!)</string>
+    <string name="discover_settings_disp_all_sects">Tous les secteurs  (!)</string> <!-- 2 espaces -->
     <string name="discover_settings_disp_all">Toutes</string>
     <string name="discover_settings_disp_enb">e/gNB actuel</string>
     <string name="discover_settings_links">Liens</string>
@@ -188,11 +188,17 @@
     <string name="stumbler_btn_txt">Activer l\'enregistrement d\'observations</string>
     <string name="stumbler_display_today">Données d\'Aujourd\'hui</string>
     <string name="stumbler_abstract">observation(s). Aujourd\'hui :</string>
+    <string name="stumbler_no_data_today">Pas de données aujourd\'hui</string>
     <string name="stumbler_rest2send">Reste à envoyer :</string>
     <string name="stumbler_rest2exp">Reste à exporter :</string>
     <string name="stumbler_send">&#160;&#160;&#160;&#160;Envoyer</string>
     <string name="stumbler_export">&#160;&#160;&#160;&#160;Exporter</string>
     <string name="stumbler_configure_up_title">Configurer l\'envoi</string>
+    <string name="stumbler_upload_error">Erreur lors de l\'envoi</string>
+    <string name="stumbler_upload_limit">Erreur : Limite de soumissions atteinte</string>
+    <string name="stumbler_api_key_error">Erreur : Clef API incorrecte</string>
+    <string name="stumbler_no_data_here">Aucune observation ici</string>
+    <string name="stumbler_filter_hint">eNB, gNB, CI, TAC ou PCI</string>
 
     <!-- Check BDD -->
     <string name="ck_bdd_btn_download">Télécharger</string>
@@ -203,15 +209,14 @@
     <string name="ck_bdd_downloading">Téléchargement en cours…</string>
     <string name="ck_bdd_download_ok">Téléchargement terminé !</string>
     <string name="ck_bdd_download_fail">Erreur lors du téléchargement</string>
-    <string name="ck_bdd_db_patching">Patching app database…</string>
+    <string name="ck_bdd_db_patching">MàJ base antennes…</string>
+    <string name="ck_bdd_db_patching_descr">/!\\ Ne pas interrompre !</string>
+    <string name="ck_bdd_db_patching_patched">Antennes ajoutées</string>
+    <string name="ck_bdd_add_local_file">Ajouter une base de données depuis un fichier local ?</string>
     <string name="ck_bdd_info_log_share"><![CDATA[cellules peuvent êtres partagées afin d\'améliorer des bases communautaires&nbsp;!<br><u>Se rendre à la fonction de partage</u>]]></string>
 
     <!-- Export -->
     <string name="exp_header_upload">Partage en ligne</string>
-    <string name="exp_bt">Export BTRNC en cours...</string>
-    <string name="exp_bt2">2/2 Upload vers btrnc.fr</string>
-    <string name="exp_em">Export eNb Mobile en cours...</string>
-    <string name="exp_em2">2/2 Upload vers enbmobile</string>
     <string name="exp_ea">Export EA en cours...</string>
     <string name="exp_ea1">1/2 Préparation des données</string>
     <string name="exp_ea2">2/2 Upload vers enb-analytics.fr</string>
@@ -226,7 +231,6 @@
     <string name="data_nodata">Aucune donnée à envoyer</string>
     <string name="data_nodest">Aucune destination sélectionnée</string>
     <string name="exportTitle">Export / Partage</string>
-    <string name="exportPseudo">Pseudo</string>
     <string name="alert_pseudo">Pensez à saisir un Pseudo dans les Paramètres !</string>
     <string name="no_cell">aucune donnée à transmettre</string>
     <string name="no_data">Base vide !</string>
@@ -245,7 +249,7 @@
     <string name="exp_csv_snack">Données exportées !</string>
     <string name="exp_trcs_snack">Traces exportées !</string>
     <string name="exp_sql_snack">Base SQLite exportée !</string>
-    <string name="exp_data_roaming">Not available outside FR</string>
+    <string name="exp_data_roaming">Not available</string>
     <string name="exp_error_3rd_party">erreur. Envoi vers serveur tiers&#160;: voir directement avec le projet concerné</string>
     <string name="exp_export_info_title">Cellules partagées</string>
 
@@ -308,6 +312,7 @@
     <string name="misc_freq_activated">activé le</string>
     <string name="misc_empty">Vide</string>
     <string name="misc_import">Import</string>
+    <string name="misc_frequency">Fréquence</string>
 
     <!-- Density -->
     <string name="density_mbs_area">Zone</string>					        <!-- max 12 caractères -->
@@ -340,4 +345,5 @@
     <string name="first_screen_p3">Sans données, cette application et le projet n\'éxisteraient pas. Il est recommandé de partager vos cellules afin de pouvoir en faire profiter les autres utilisateurs de l\'appli et/ou visiteurs du site.</string>
     <string name="first_screen_p4">Cette application a besoin des permissions localisation exacte et Appels téléphoniques pour permettre le monitoring radio et géolocaliser les cellules capturées.</string>
     <string name="first_screen_p5">La localisation est utilisée seulement quand l\'enregistrement est actif. Une notification est affichée pour vous en informer.</string>
+
 </resources>
