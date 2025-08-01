@@ -97,7 +97,6 @@
     <string name="main_start">Startup...</string>
     <string name="main_out_of_service">No network !</string>
     <string name="main_service_limited">Restricted network</string>
-    <string name="main_not_identified">not identified</string>
     <string name="main_analyt_hyp">Hypothesis</string>
     <string name="main_analyt_ident">Locally identified</string>
     <string name="main_analyt_src">Searching…</string>
