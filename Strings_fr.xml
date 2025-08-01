@@ -97,7 +97,6 @@
     <string name="main_start">Démarrage...</string>
     <string name="main_out_of_service">Aucun réseau !</string>
     <string name="main_service_limited">Connexion restreinte</string>
-    <string name="main_not_identified">non identifié</string>
     <string name="main_analyt_hyp">Hypothèse</string>
     <string name="main_analyt_ident">Identifié localement</string>
     <string name="main_analyt_src">Recherche...</string>
