@@ -97,7 +97,6 @@
     <string name="main_start">Inicio…</string>
     <string name="main_out_of_service">Sin red !</string>
     <string name="main_service_limited">Conexión restringida</string>
-    <string name="main_not_identified">no identificado</string>
     <string name="main_analyt_hyp">Hipótesis</string>
     <string name="main_analyt_ident">Identificado localmente</string>
     <string name="main_analyt_src">Búsqueda…</string>
