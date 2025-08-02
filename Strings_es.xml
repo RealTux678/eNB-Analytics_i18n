@@ -256,6 +256,7 @@
     <string name="aa_found">encontrados</string>
     <string name="aa_no_data">Sin datos</string>
     <string name="aa_weak_data">Datos insuficientes</string>
+    <string name="aa_limited_data">Capturar más datos</string>
     <string name="aa_ambiguous">Ambigüedad</string>
 
     <!-- Analyse/identification -->
