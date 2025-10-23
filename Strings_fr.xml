@@ -1,4 +1,5 @@
 <resources>
+    <!-- >>> Do not change the order of the lines !! <<< -->
     <string name="app_name">eNB Analytics</string>
 
     <!-- Navigation Drawer -->
@@ -36,6 +37,8 @@
     <string name="action_share">Partager</string>
     <string name="action_delete">Supprimer</string>
     <string name="action_filter">Filtrer</string>
+    <string name="action_new_search">Nouvelle Recherche</string>
+    <string name="action_help">Aide</string>
     <string name="action_quit">Quitter</string>
 
     <!-- Settings -->
@@ -104,7 +107,6 @@
     <string name="main_radio_menu_alert">Toute modification dans ce menu peut entrainer un dysfonctionnement du téléphone</string>
     <string name="main_radio_menu_alert_btn">Y aller quand même</string>
     <string name="main_support_attributed">Support déjà attribué au</string>
-    <string name="main_other_hyp">Autre hypothèse</string>
     <string name="main_alert_notif">• La notification de l\'appli n\'est pas affichée</string>
     <string name="main_alert_radio">• Données radio indisponibles quand l\'écran est éteint</string>
     <string name="main_alert_unstable">Fonction en cours de dev. / Pour utilisateurs avancés</string>   <!-- max 55 caractères -->
@@ -120,6 +122,7 @@
     <string name="main_funct_unavailable">Fonction indisponible</string>
     <string name="main_no_data_to_analyse">Aucune donnée à analyser</string>
     <string name="main_no_tower_to_analyse">Aucun support à analyser</string>
+    <string name="main_no_tower_found">Aucun support trouvé</string>
     <string name="main_trace_recorded">Trace enregistrée</string>
     <string name="main_no_trace">Aucun point TA disponible</string>
     <string name="main_service_stopped">Service radio arrêté</string>
@@ -135,6 +138,18 @@
     <string name="main_about_text">Cette application permet de collecter des logs et tenter d\'identifier les antennes de téléphonie mobile 4G/5G.\n\nLa méthodologie de localisation ne pourra jamais être fiable à 100%\n\nSi vous rencontrez des difficultés ou avez des remarques, contactez moi via Twitter X (@enbanalytics) en DM ou mail: enb.analytics@gmail.com</string>
     <string name="main_info_missing_db">Des bases de données doivent êtres téléchargées</string>
     <string name="exp_confi_alti">La réalisation du profil altimétrique nécéssite l\'envoi des coordonnées de votre position ainsi que celles de l\'antenne vers le serveur eNB Analytics afin de pouvoir réaliser les calculs.\n\nSouhaitez-vous continuer ?</string>
+    <string name="main_osm_attribution">© les contributeurs OpenStreetMap</string>
+    <string name="main_no_enb_to_analyze">Aucun eNB à analyser\nÊtes-vous connecté en 4G ou 5G ?</string>
+    <string name="main_ask_identify_title">Identifier ?</string>
+    <string name="main_ask_identify_text1">Confirmez cette action seulement si vous êtes sûr à 100 %.</string>
+    <string name="main_ask_identify_text2_p1_alt">Ceci va ajouter le</string>
+    <string name="main_ask_identify_text2_alt">dans la collection et l\'appli le considérera désormais comme identifié.</string>
+    <string name="main_ask_identify_text2_p1">Ceci va attribuer le</string>
+    <string name="main_ask_identify_text2_p2">au support</string>
+    <string name="main_ask_identify_text3">> Cette action n\'est pas indispensable au bon fonctionnement de l\'appli et peut devenir contre-productive si utilisée à l\'éxcès.</string>
+    <string name="main_unidentify">Dé-dentifier</string>
+    <string name="main_incorrect_input">Saisie ou opérateur incorrect</string>
+    <string name="main_info_pci_range">Le PCI doit être compris entre 0 et 1007</string>
 
 
     <!-- Discover -->
@@ -146,6 +161,7 @@
     <string name="discover_settings_disp_enb">e/gNB actuel</string>
     <string name="discover_settings_links">Liens</string>
     <string name="discover_settings_ta_circle">Cercle TA</string>
+    <string name="discover_mbs_goto">&#160;&#160;&#160;&#160;Y aller</string>                   <!-- préserver les 4 espaces devant -->
 
     <!-- Journal -->
     <string name="jnl_mbs_delete_cell">"   Supprimer cette cellule"</string><!-- préserver les 3 espaces devant -->
@@ -155,7 +171,7 @@
     <string name="jnl_mbs_validate_hyp">"   Valider l\'hypothèse (identifier)"</string>	<!-- préserver les 3 espaces devant -->
     <string name="jnl_mbs_delete_hyp">"   Supprimer l\'hypothèse"</string>	<!-- préserver les 3 espaces devant -->
     <string name="jnl_mbs_delete_traces">Supprimer les traces TA</string>	<!-- max 27 caractères -->
-    <string name="jnl_mbs_delete_obs">Supprimer observation</string>		<!-- max 27 caractères -->
+    <string name="jnl_mbs_delete_obs">Supprimer observations</string>		<!-- max 27 caractères -->
     <string name="jnl_mbs_delete_last_obs">Suppr. dernière observation</string>	<!-- max 27 caractères -->
     <string name="jnl_mbs_first_date">1ère visite</string>			        <!-- max 12 caractères -->
     <string name="jnl_mbs_capture">Capturé</string>			                <!-- max 12 caractères -->
@@ -164,12 +180,21 @@
     <string name="jnl_sort_date">Par date (défaut)</string>
     <string name="jnl_sort_egnb">Par e/gNB</string>
     <string name="jnl_sort_provider">Par opérateur</string>
+    <string name="jnl_sort_year">Par année</string>
     <string name="jnl_sort_signal">Force du signal</string>
     <string name="jnl_sort_not_shared">Non partagé</string>
     <string name="jnl_overflow_display_all">Voir le journal entier</string>
     <string name="jnl_overflow_display_more">Voir plus</string>
     <string name="jnl_overflow_display_xxx_cells">Afficher toutes les</string>
     <string name="jnl_no_position">pas de géolocalisation disponible</string>
+    <string name="jnl_delete_all_cells">Toutes les cellules !</string>
+    <string name="jnl_delete_cells_no_pos">Cellules sans position</string>
+    <string name="jnl_delete_all_cells_descr">Ceci va éffacer toutes les cellules collectées.\n\nCette action est irréversible.\n\nVoulez-vous continuer ?</string>
+    <string name="jnl_adv_delete_title">Effacement avancé</string>
+    <string name="jnl_adv_delete_hint">cellules seront supprimées</string>
+    <string name="jnl_import_csv_descr">Permet de restaurer des cellules capturées avec cette application. Cela n\'inclut pas les identifications.\n\nImporter exclusivement un fichier généré par cette application. Le fichier doit commencer par \"ExportV5_xxxx..\""\n\nRemarque: un import bloque la possibilité de partager les données importées et existantes. Seules les nouvelles cellules capturées/mises à jour seront à nouveau partageables.</string>
+    <string name="jnl_not_in_search_mode">Fonction impossible en mode recherche</string>
+    <string name="col_mbs_analyze_change">Analyser/Modifier</string>
 
     <!-- Carte WEB -->
     <string name="web_perm_error">Erreur. Les permissions sont-elles accordées ?</string>
@@ -194,10 +219,12 @@
     <string name="stumbler_export">&#160;&#160;&#160;&#160;Exporter</string>
     <string name="stumbler_configure_up_title">Configurer l\'envoi</string>
     <string name="stumbler_upload_error">Erreur lors de l\'envoi</string>
-    <string name="stumbler_upload_limit">Erreur : Limite de soumissions atteinte</string>
+    <string name="stumbler_api_key_limit">Erreur : Limite clef API atteinte</string>
     <string name="stumbler_api_key_error">Erreur : Clef API incorrecte</string>
     <string name="stumbler_no_data_here">Aucune observation ici</string>
     <string name="stumbler_filter_hint">eNB, gNB, CI, TAC ou PCI</string>
+    <string name="stumbler_upload_in_progress">Téléversement en cours…</string>
+    <string name="stumbler_upload_success">Observations envoyées avec succès !</string>
 
     <!-- Check BDD -->
     <string name="ck_bdd_btn_download">Télécharger</string>
@@ -216,9 +243,11 @@
 
     <!-- Export -->
     <string name="exp_header_upload">Partage en ligne</string>
+    <string name="exp_em">Export NetMonster PT…</string>
+    <string name="exp_em2">2/2 Envoi vers bakertelekom</string>
     <string name="exp_ea">Export EA en cours...</string>
     <string name="exp_ea1">1/2 Préparation des données</string>
-    <string name="exp_ea2">2/2 Upload vers enb-analytics.fr</string>
+    <string name="exp_ea2">2/2 Envoi vers enb-analytics.fr</string>
     <string name="exp_new_cells">nouvelles cellules</string>
     <string name="exp_nm_progress">Export en cours...</string>
     <string name="exp_ntm">Export au format NetMonster</string>
@@ -248,8 +277,10 @@
     <string name="exp_csv_snack">Données exportées !</string>
     <string name="exp_trcs_snack">Traces exportées !</string>
     <string name="exp_sql_snack">Base SQLite exportée !</string>
-    <string name="exp_data_roaming">Not available</string>
-    <string name="exp_error_3rd_party">erreur. Envoi vers serveur tiers&#160;: voir directement avec le projet concerné</string>
+    <string name="exp_up_ea_msg">Partagez vos logs vers le projet afin d\'améliorer la base de données. Les résultats, si exploitables seront visibles sur le site et l\'appli.\nCellules = important pour le projet. Les identifications, elles, ne sont pas systématiquement prises en compte</string>
+    <string name="exp_up_3rd_msg">Partage vers des projets tierce-partie. Pour toute question ou problèmes, veuillez les contacter directement</string>
+    <string name="exp_data_roaming">Indisponible</string>
+    <string name="exp_error_3rd_party">Erreur. Envoi vers serveur tiers&#160;: voir directement avec le projet concerné</string>
     <string name="exp_export_info_title">Cellules partagées</string>
 
     <!-- Analytics -->
@@ -260,6 +291,9 @@
     <string name="aa_weak_data">Données insuffisantes</string>
     <string name="aa_limited_data">Capturez plus de données</string>
     <string name="aa_ambiguous">Ambiguïté</string>
+    <string name="main_other_hyp">Autre hypothèse :</string>
+    <string name="aa_related_hyp">hypothèse associée :</string>
+    <string name="aa_related_ident">identification associée :</string>
 
     <!-- Analyse/identification -->
     <string name="id_rech_create">Créer nouveau support</string>
@@ -268,15 +302,24 @@
     <string name="id_rech_mlsp">Rech. expert via données MLS</string>
     <string name="id_rech_fu">Rech. via données LOG/MLS</string>
     <string name="id_rech_ta">Recherche via données TA</string>
+    <string name="id_reinit_map">Réinitialiser la carte</string>
 
     <!-- File explorer -->
     <string name="file_expl_open_text">Voir (Texte)</string>
     <string name="file_expl_open_csv">Voir (CSV)</string>
     <string name="file_expl_items">éléments</string>
+    <string name="file_expl_folder">Dossier</string>
+    <string name="file_expl_favorite_folder">Dossier favori</string>
     <string name="file_expl_parent_folder">Dossier parent</string>
+    <string name="file_expl_use_android_explorer">Utiliser l\'explorateur Android</string>
+    <string name="file_rdr_large_file_msg_p1">Seules les</string>
+    <string name="file_rdr_large_file_msg_p2">premières lignes sont affichées</string>
+    <string name="file_rdr_action_goto_end">Voir la fin</string>
+    <string name="file_rdr_action_line_break">Retour à la ligne</string>
+    <string name="file_rdr_action_monospace">Police Monospace</string>
 
     <!-- Miscellaneous -->
-    <string name="misc_yes">Oui</string>
+    <string name="misc_yes">Oui</string>    <!-- utilisé pour la détection langque fr -->
     <string name="misc_no">Non</string>
     <string name="misc_cancel">Annuler</string>
     <string name="misc_close">Fermer</string>
@@ -291,6 +334,7 @@
     <string name="misc_confident">Confidentialité</string>
     <string name="misc_order_mode">Mode de tri</string>
     <string name="misc_search">Rechercher</string>
+    <string name="misc_search_by">Rechercher par</string>
     <string name="misc_searching">Rechercher...</string>
     <string name="misc_file_incorrect">Fichier incorrect</string>
     <string name="misc_file_format_mismatch">Format de fichier incorrect</string>
@@ -313,6 +357,11 @@
     <string name="misc_empty">Vide</string>
     <string name="misc_import">Import</string>
     <string name="misc_frequency">Fréquence</string>
+    <string name="misc_meters">mètres</string>
+    <string name="misc_active">activé</string>
+    <string name="misc_done">Terminé</string>
+    <string name="misc_choose">choisir</string>
+    <string name="misc_choose_file">Choisir fichier</string>
 
     <!-- Density -->
     <string name="density_mbs_area">Zone</string>					        <!-- max 12 caractères -->
@@ -342,8 +391,12 @@
     <string name="first_permissions">Demander les permissions</string>
     <string name="first_screen_p2">Cette appli permet de tenter de localiser les antennes mobiles 4G et 5G en exploitant la base Mozilla Location Services et vos propres cellules capturées sur le terrain à l\'aide du GPS de votre téléphone : plus vous capturez des données, plus les hypothèses affichées deviennent précises.</string>
     <string name="first_screen_p2_bis">L\'appli affichera des hypothèses pas forcément fiables au début, car ça dépend des données disponibles. Ces hypothèses seront automatiquement recalculées au fur et à mesure ; d\'où l\'importance de capturer de nouvelles données et ne pas se précipiter pour &quot;identifier&quot;.</string>
+    <string name="first_screen_p3_header">Communautaire</string>
     <string name="first_screen_p3">Sans données, cette application et le projet n\'éxisteraient pas. Il est recommandé de partager vos cellules afin de pouvoir en faire profiter les autres utilisateurs de l\'appli et/ou visiteurs du site.</string>
+    <string name="first_screen_p4_header">Localisation exacte</string>
     <string name="first_screen_p4">Cette application a besoin des permissions localisation exacte et Appels téléphoniques pour permettre le monitoring radio et géolocaliser les cellules capturées.</string>
     <string name="first_screen_p5">La localisation est utilisée seulement quand l\'enregistrement est actif. Une notification est affichée pour vous en informer.</string>
-
+    <string name="first_screen_view_policy">Voir la politique de confidentialité</string>
+    <string name="next_screen_header">Comment ça fonctionne ?</string>
+    <string name="next_screen_content"><![CDATA[Le but est de capturer le maximum de cellules lors de différents déplacements.<br><br>L\'appli affiche des hypothèses <b>pas forcément fiables</b>, car ça dépend des données disponibles. Ces hypothèses seront <b>automatiquement recalculées</b> au fur et à mesure ; d\'où l\'importance de capturer de nouvelles données et ne pas se précipiter pour \"identifier\".<br><br>Pensez à partager vos cellules afin de faire avancer le projet !]]></string>
 </resources>
