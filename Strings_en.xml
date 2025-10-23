@@ -1,8 +1,9 @@
 <resources>
+    <!-- >>> Do not change the order of the lines !! <<< -->
     <string name="app_name">eNB Analytics</string>
 
     <!-- Navigation Drawer -->
-    <string name="nav_monitor">Monitour</string>
+    <string name="nav_monitor">Monitor</string>
     <string name="nav_drive">Drive mode</string>
     <string name="nav_discover">Local map</string>
     <string name="nav_journal">Logs</string>
@@ -36,6 +37,8 @@
     <string name="action_share">Share</string>
     <string name="action_delete">Delete</string>
     <string name="action_filter">Filter</string>
+    <string name="action_new_search">New search</string>
+    <string name="action_help">Help</string>
     <string name="action_quit">Quit</string>
 
     <!-- Settings -->
@@ -74,7 +77,7 @@
     <string name="setting_recommended_setting">Recommended setting :</string>
     <string name="setting_msg_pseudo_length">The nickname is limited to 20 characters</string>
     <string name="setting_sourcelist_header">Download server</string>
-    <string name="setting_unstable_descr">Enable features under development. Caution: Risk of crash, data loss, etc.</string>
+    <string name="setting_unstable_descr">Enable features under development. Caution: risk of crash, data loss, etc.</string>
     <string name="setting_bdd_source_path">Custom server URL</string>
     <string name="setting_bdd_source_path_descr">URL to the index file</string>
 
@@ -104,7 +107,6 @@
     <string name="main_radio_menu_alert">Any changes in this menu may cause the phone to malfunction.</string>
     <string name="main_radio_menu_alert_btn">Go there anyway</string>
     <string name="main_support_attributed">Support already assigned to</string>
-    <string name="main_other_hyp">Other hypothesis</string>
     <string name="main_alert_notif">• App notification is not displayed</string>
     <string name="main_alert_radio">• Radio data unavailable when screen is off</string>
     <string name="main_alert_unstable">Feature under development / For advanced users</string>   <!-- max 55 caractères -->
@@ -120,6 +122,7 @@
     <string name="main_funct_unavailable">Function unavailable</string>
     <string name="main_no_data_to_analyse">No data to analyze</string>
     <string name="main_no_tower_to_analyse">No tower to analyze</string>
+    <string name="main_no_tower_found">No tower found</string>
     <string name="main_trace_recorded">Trace recorded</string>
     <string name="main_no_trace">No TA point available</string>
     <string name="main_service_stopped">Radio service stopped</string>
@@ -134,6 +137,19 @@
     <string name="main_copied_to_clipboard">Copied to clipboard!</string>
     <string name="main_about_text">This application allows you to collect logs and attempt to identify 4G/5G mobile phone antennas.\n\nThe location methodology can never be 100% reliable\n\nIf you encounter any difficulties or have any comments, contact me via Twitter X (@enbanalytics) in DM or email: enb.analytics@gmail.com</string>
     <string name="main_info_missing_db">Databases must be downloaded</string>
+    <string name="main_osm_attribution">© OpenStreetMap contributors</string>
+    <string name="main_no_enb_to_analyze">No eNB to analyze\nAre you connected on LTE or NR network?</string>
+    <string name="main_ask_identify_title">Identify ?</string>
+    <string name="main_ask_identify_text1">Confirm this action only if you are 100% sure.</string>
+    <string name="main_ask_identify_text2_p1_alt">This will add</string>
+    <string name="main_ask_identify_text2_alt">in the collection and the app will now consider it as identified.</string>
+    <string name="main_ask_identify_text2_p1">This will assign the</string>
+    <string name="main_ask_identify_text2_p2">to tower</string>
+    <string name="main_ask_identify_text3">> This action is not essential for the proper functioning of the app and can become counterproductive if used excessively.</string>
+    <string name="main_unidentify">Unidentify</string>
+    <string name="main_incorrect_input">Incorrect entry or provider</string>
+    <string name="main_info_pci_range">The TAC must be between 0 and 1007</string>
+
 
     <!-- Discover -->
     <string name="discover_no_towers">No data on this area</string>
@@ -144,16 +160,17 @@
     <string name="discover_settings_disp_enb">current e/gNB</string>
     <string name="discover_settings_links">Links</string>
     <string name="discover_settings_ta_circle">TA circle</string>
+    <string name="discover_mbs_goto">&#160;&#160;&#160;&#160;Go to</string> <!-- préserver les 4 espaces devant -->
 
     <!-- Journal -->
-    <string name="jnl_mbs_delete_cell">"   Delete this cell"</string><!-- préserver les 3 espaces devant -->
+    <string name="jnl_mbs_delete_cell">"   Delete this cell"</string>       <!-- préserver les 3 espaces devant -->
     <string name="jnl_mbs_delete_pos">Delete position</string>
     <string name="jnl_mbs_last_date">Visited</string>				        <!-- max 12 caractères -->
     <string name="jnl_mbs_shared">Shared</string>
     <string name="jnl_mbs_validate_hyp">"   Validate hypothesis (identify)"</string>	<!-- préserver les 3 espaces devant -->
-    <string name="jnl_mbs_delete_hyp">"   Delete hypothesis"</string>	<!-- préserver les 3 espaces devant -->
-    <string name="jnl_mbs_delete_traces">Delete TA traces</string>	<!-- max 27 caractères -->
-    <string name="jnl_mbs_delete_obs">Delete observation</string>		<!-- max 27 caractères -->
+    <string name="jnl_mbs_delete_hyp">"   Delete hypothesis"</string>	    <!-- préserver les 3 espaces devant -->
+    <string name="jnl_mbs_delete_traces">Delete TA traces</string>	        <!-- max 27 caractères -->
+    <string name="jnl_mbs_delete_obs">Delete observations</string>		    <!-- max 27 caractères -->
     <string name="jnl_mbs_delete_last_obs">Delete last observation</string>	<!-- max 27 caractères -->
     <string name="jnl_mbs_first_date">1st visit</string>			        <!-- max 12 caractères -->
     <string name="jnl_mbs_capture">Catched</string>			                <!-- max 12 caractères -->
@@ -162,12 +179,21 @@
     <string name="jnl_sort_date">Per date (default)</string>
     <string name="jnl_sort_egnb">Per e/gNB</string>
     <string name="jnl_sort_provider">Per provider</string>
+    <string name="jnl_sort_year">Per Year</string>
     <string name="jnl_sort_signal">Signal strength</string>
     <string name="jnl_sort_not_shared">Not shared</string>
     <string name="jnl_overflow_display_all">Display all logs</string>
     <string name="jnl_overflow_display_more">See more</string>
     <string name="jnl_overflow_display_xxx_cells">Display all</string>
     <string name="jnl_no_position">No geolocation available</string>
+    <string name="jnl_delete_all_cells">Delete all cells</string>
+    <string name="jnl_delete_cells_no_pos">Cells without position</string>
+    <string name="jnl_delete_all_cells_descr">This will erase all collected cells.\n\nThis action is irreversible.\n\nDo you want to continue?</string>
+    <string name="jnl_adv_delete_title">Advanced delete</string>
+    <string name="jnl_adv_delete_hint">cells will be deleted</string>
+    <string name="jnl_import_csv_descr">Permet de restaurer des cellules capturées avec cette application. Cela n\'inclut pas les identifications.\n\nImporter exclusivement un fichier généré par cette application. Le fichier doit commencer par \"ExportV5_xxxx..\""\n\nRemarque: un import bloque la possibilité de partager les données importées et existantes. Seules les nouvelles cellules capturées/mises à jour seront à nouveau partageables.</string>
+    <string name="jnl_not_in_search_mode">Not available in search mode</string>
+    <string name="col_mbs_analyze_change">Analyze/Modify</string>
 
     <!-- Carte WEB -->
     <string name="web_perm_error">Error. Are permissions granted?</string>
@@ -192,10 +218,12 @@
     <string name="stumbler_export">&#160;&#160;&#160;&#160;Export</string>
     <string name="stumbler_configure_up_title">Configure sending</string>
     <string name="stumbler_upload_error">Error during sending</string>
-    <string name="stumbler_upload_limit">Error: Submission limit reached</string>
+    <string name="stumbler_api_key_limit">Error: API key limit reached</string>
     <string name="stumbler_api_key_error">Error: Incorrect API key</string>
     <string name="stumbler_no_data_here">No data here</string>
     <string name="stumbler_filter_hint">eNB, gNB, CI, TAC or PCI</string>
+    <string name="stumbler_upload_in_progress">Upload in progress…</string>
+    <string name="stumbler_upload_success">Observations sent successfully!</string>
 
     <!-- Check BDD -->
     <string name="ck_bdd_btn_download">Download</string>
@@ -214,6 +242,8 @@
 
     <!-- Export -->
     <string name="exp_header_upload">Online share</string>
+    <string name="exp_bt">Export BTRNC en cours…</string>
+    <string name="exp_bt2">2/2 Upload vers btrnc.fr</string>
     <string name="exp_em">Export NetMonster PT…</string>
     <string name="exp_em2">2/2 Upload to bakertelekom</string>
     <string name="exp_ea">Export EA in progress…</string>
@@ -222,7 +252,7 @@
     <string name="exp_new_cells">new cells</string>
     <string name="exp_nm_progress">Export in progress…</string>
     <string name="exp_ntm">Export to NetMonster format</string>
-    <string name="cell_telever">celles uploaded</string>
+    <string name="cell_telever">cells uploaded</string>
     <string name="cell_export">cells write</string>
     <string name="data_telever_thanks">Thanks !</string>
     <string name="data_telever_snack">shared</string>
@@ -242,14 +272,16 @@
     <string name="exp_log_send">cell(s) to send</string>
     <string name="exp_log_send_new">new cell(s)</string>
     <string name="exp_col_send">identification(s) to send</string>
-    <string name="exp_log_wait">cellule(s) disponible(s)</string>
+    <string name="exp_log_wait">cell(s) available</string>
     <string name="exp_ident_wait">identification(s) available</string>
     <string name="exp_data_wait">available data</string>
     <string name="exp_csv_snack">Data exported !</string>
     <string name="exp_trcs_snack">Traces exported !</string>
     <string name="exp_sql_snack">SQLite database exported</string>
+    <string name="exp_up_ea_msg">Share your logs with the project to improve the database. The results, if usable, will be visible on the website and the app.\nCells = important for the project. Identifications, however, are not systematically taken into account.</string>
+    <string name="exp_up_3rd_msg">Sharing to 3rd party projects. For any questions or issues, please contact them directly.</string>
     <string name="exp_data_roaming">Not available</string>
-    <string name="exp_error_3rd_party">error. Sending to 3rd party server&#160;: see directly with the project concerned</string>
+    <string name="exp_error_3rd_party">Error. Sending to 3rd party server&#160;: see directly with the concerned project</string>
     <string name="exp_export_info_title">Cells shared</string>
 
     <!-- Analytics -->
@@ -260,6 +292,9 @@
     <string name="aa_weak_data">Insufficient data</string>
     <string name="aa_limited_data">Capture more data</string>
     <string name="aa_ambiguous">Ambiguity</string>
+    <string name="main_other_hyp">Other hypothesis:</string>
+    <string name="aa_related_hyp">related hypothesis:</string>
+    <string name="aa_related_ident">related identification:</string>
 
     <!-- Analyse/identification -->
     <string name="id_rech_create">Create new tower</string>
@@ -268,12 +303,21 @@
     <string name="id_rech_mlsp">Expert search via MLS data</string>
     <string name="id_rech_fu">Search via LOG/MLS data</string>
     <string name="id_rech_ta">Search via TA data</string>
+    <string name="id_reinit_map">Reset map</string>
 
     <!-- File explorer -->
-    <string name="file_expl_open_text">See (Text)</string>
-    <string name="file_expl_open_csv">See (CSV)</string>
+    <string name="file_expl_open_text">Open (as Text)</string>
+    <string name="file_expl_open_csv">Open (as CSV)</string>
     <string name="file_expl_items">elements</string>
+    <string name="file_expl_folder">Folder</string>
+    <string name="file_expl_favorite_folder">Favorite folder</string>
     <string name="file_expl_parent_folder">Parent folder</string>
+    <string name="file_expl_use_android_explorer">Use Android explorer</string>
+    <string name="file_rdr_large_file_msg_p1">Only the</string>
+    <string name="file_rdr_large_file_msg_p2">first lines are displayed</string>
+    <string name="file_rdr_action_goto_end">Goto end</string>
+    <string name="file_rdr_action_line_break">Line break</string>
+    <string name="file_rdr_action_monospace">Monospace font</string>
 
     <!-- Miscellaneous -->
     <string name="misc_yes">Yes</string>
@@ -286,11 +330,12 @@
     <string name="misc_delete">Delete</string>
     <string name="misc_cell">Cell</string>
     <string name="misc_cells">Cells</string>
-    <string name="misc_support">Support</string>
-    <string name="misc_supports">Support</string>
+    <string name="misc_support">Tower</string>
+    <string name="misc_supports">Towers</string>
     <string name="misc_confident">Confidentiality</string>
     <string name="misc_order_mode">Sorting mode</string>
     <string name="misc_search">Search</string>
+    <string name="misc_search_by">Search by</string>
     <string name="misc_searching">Searching…</string>
     <string name="misc_file_incorrect">Incorrect file</string>
     <string name="misc_file_format_mismatch">Incorrect file format</string>
@@ -313,6 +358,11 @@
     <string name="misc_empty">Empty</string>
     <string name="misc_import">Import</string>
     <string name="misc_frequency">Frequency</string>
+    <string name="misc_meters">meters</string>
+    <string name="misc_active">active</string>
+    <string name="misc_done">Done</string>
+    <string name="misc_choose">choose</string>
+    <string name="misc_choose_file">Choose file</string>
 
     <!-- Density -->
     <string name="density_mbs_area">Area</string>					        <!-- max 12 caractères -->
@@ -342,8 +392,29 @@
     <string name="first_permissions">Ask for permissions</string>
     <string name="first_screen_p2">This app allows you to try to locate 4G and 5G mobile antennas by using the Mozilla Location Services database and your own cells captured in the field using your phone\'s GPS: the more data you capture, the more precise the hypotheses displayed become.</string>
     <string name="first_screen_p2_bis">The app will initially display hypotheses that may not be reliable, as they depend on the available data. These hypotheses will be automatically recalculated as they become available; hence the importance of capturing new data and not rushing into "identifying."</string>
+    <string name="first_screen_p3_header">Community</string>
     <string name="first_screen_p3">Without data, this app and project would not exist. It is recommended that you share your data so that other app users and/or website visitors can benefit from it.</string>
+    <string name="first_screen_p4_header">Exact location</string>
     <string name="first_screen_p4">This app requires the Precise Location and Phone permissions to enable radio monitoring and geolocate captured cells.</string>
     <string name="first_screen_p5">Location is only used when recording is active. A notification is displayed to inform you.</string>
+    <string name="first_screen_view_policy">View Privacy Policy</string>
+    <string name="next_screen_header">How it works ?</string>
+    <string name="next_screen_content"><![CDATA[The goal is to capture as many cells as possible during different journeys.<br><br>The app displays hypotheses that are <b>not necessarily reliable</b>, because it depends on the available data. These assumptions will be <b>automatically recalculated</b> as and when ; hence the importance of capturing new data and not rushing to "\identify\".<br><br>Consider sharing your cells to help move the project forward!]]></string>
 
+
+    <string name="exp_confi_alti">La réalisation du profil altimétrique nécéssite l\'envoi des coordonnées de votre position ainsi que celles de l\'antenne vers le serveur eNB Analytics afin de pouvoir réaliser les calculs.\n\nSouhaitez-vous continuer ?</string>
+
+
+
+    <!-- SYSTEM -->
+    <!-- Used in NavigationDrawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="isDarkModeEnabled" translatable="false">false</string>
+
+    <string name="ea_uploads" translatable="false">/EA_uploads/</string>
+    <string name="ea_uploads2" translatable="false">/Analytics/</string>
+    <string name="sftp" translatable="false">sftp</string>
+    <string name="host_keycheck" translatable="false">StrictHostKeyChecking</string>
 </resources>
