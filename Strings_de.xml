@@ -89,9 +89,9 @@
     <string name="notif_button">Anhalten und aussteigen</string>
 
     <!-- GPS State -->
-    <string name="gps_wait">Warten auf GPS</string>
+    <string name="gps_wait">Suche läuft…</string>
     <string name="gps_pause">Pause</string>
-    <string name="gps_old">zu alt</string>
+    <string name="gps_old">Zu alt</string>
     <string name="gps_weak">Ungenau</string>
 
     <!-- Main -->
@@ -323,9 +323,9 @@
     <string name="file_expl_open_text">Siehe (Text)</string>
     <string name="file_expl_open_csv">Siehe (CSV)</string>
     <string name="file_expl_items">elemente</string>
-    <string name="file_expl_folder">Folder</string> //TODO
-    <string name="file_expl_favorite_folder">Dossier favori</string>    //TODO
-    <string name="file_expl_parent_folder">Dossier parent</string>      //TODO
+    <string name="file_expl_folder">Ordner</string>
+    <string name="file_expl_favorite_folder">Favoritenordner</string>
+    <string name="file_expl_parent_folder">Übergeordneter Ordner</string>
     <string name="file_expl_use_android_explorer">Nutzen Sie den Android-Entdecker</string>
     <string name="file_rdr_large_file_msg_p1">Nur die</string>
     <string name="file_rdr_large_file_msg_p2">ersten Zeilen werden angezeigt</string>
@@ -334,7 +334,7 @@
     <string name="file_rdr_action_monospace">Monospace-Schriftart</string>
 
     <!-- Miscellaneous -->
-    <string name="misc_yes">Ya</string>
+    <string name="misc_yes">Ja</string>
     <string name="misc_no">Nein</string>
     <string name="misc_cancel">Abbrechen</string>
     <string name="misc_close">Schließen</string>
