@@ -26,6 +26,7 @@
     <string name="action_radio_menu">Información del teléfono</string>
     <string name="action_calc">Cálculo LCID &lt;-&gt; e/gNB</string>
     <string name="action_search_local">Búsqueda local</string>
+    <string name="action_search_support">Antenas de búsqueda</string>
     <string name="action_files">Explorador de archivos</string>
     <string name="action_radio_debug">Datos radio</string>
     <string name="action_nearby">Alrededor de mí posición</string>
@@ -39,6 +40,7 @@
     <string name="action_filter">Filtrar</string>
     <string name="action_new_search">Nueva búsqueda</string>
     <string name="action_help">Ayuda</string>
+    <string name="action_changelog">Ver registro de cambios</string>
     <string name="action_quit">Salir</string>
 
     <!-- Settings -->
@@ -73,7 +75,7 @@
     <string name="setting_bypass_descr">Si está habilitado, la aplicación ignorará los resultados de la base de datos.</string>
     <string name="setting_api_key_header">Clave API</string>
     <string name="setting_api_key_descr">Para identificarse como colaborador del proyecto de servicio de localización (opcional)</string>
-    <string name="setting_api_key_descr_err_msg">Formato incorrecto (predeterminado 00000000)</string>
+    <string name="setting_api_key_descr_err_msg">Formato incorrecto (predeterminado 1000000a)</string>
     <string name="setting_recommended_setting">Configuración recomendada:</string>
     <string name="setting_msg_pseudo_length">El apodo está limitado a 20 caracteres</string>
     <string name="setting_sourcelist_header">Servidor de descargas</string>
@@ -106,7 +108,9 @@
     <string name="main_unsupported_provider">Operador no soportado</string>
     <string name="main_radio_menu_alert">Cualquier cambio en este menú puede provocar un mal funcionamiento del teléfono</string>
     <string name="main_radio_menu_alert_btn">Ir sin embargo</string>
-    <string name="main_support_attributed">Soporte ya asignado al</string>
+    <string name="main_support_attributed_to">Soporte ya asignado al</string>
+    <string name="main_support_attributed">Soporte ya asignado</string>
+    <string name="main_support_not_attributed">Soporte no asignado</string>
     <string name="main_alert_notif">• La notificación de la aplicación no aparece</string>
     <string name="main_alert_radio">• Datos radio no disponibles cuando la pantalla está apagada</string>
     <string name="main_alert_unstable">Función en desarrollo / Para usuarios avanzados</string>
@@ -130,7 +134,7 @@
     <string name="main_no_permission_phone">Permiso Telefono denegado</string>
     <string name="main_permission_msg1">Una vez otorgados los permisos, salga de la aplicación y vuelva a iniciarla</string>
     <string name="main_permission_msg2">Para que la aplicación funcione, debe otorgar los permisos</string>
-    <string name="main_identified">identificado con éxito!</string>
+    <string name="main_identified_successfully">identificado con éxito!</string>
     <string name="main_attributed">atribuido</string>
     <string name="main_clash_attr">ya atribuido</string> <!-- Support s<dfherkj déjà attribué -->
     <string name="main_clash_ident">ya identificado</string> <!-- eNB sdfghrgf déjà identifié -->
@@ -149,6 +153,8 @@
     <string name="main_unidentify">Eliminar identificación</string>
     <string name="main_incorrect_input">Entrada u operador incorrecto</string>
     <string name="main_info_pci_range">El TAC debe estar entre 0 y 1007</string>
+    <string name="main_missing_database">Base de datos faltante</string>
+    <string name="main_export_format">Formato de exportación</string>
 
 
     <!-- Discover -->
@@ -207,6 +213,7 @@
     <string name="web_search">Buscar un eNB</string>
     <string name="web_no_data_msg">Zona libre de datos. Se agradece cualquier intercambio de registros. ¡Es tu turno!</string>
 
+
     <!-- EA Stumbler -->
     <string name="stumbler_btn_txt">Activar el registro de observaciones</string>
     <string name="stumbler_display_today">Datos de Hoy</string>
@@ -224,13 +231,13 @@
     <string name="stumbler_filter_hint">eNB, gNB, CI, TAC o PCI</string>
     <string name="stumbler_upload_in_progress">Subida en progreso…</string>
     <string name="stumbler_upload_success">¡Observaciones enviadas exitosamente!</string>
+    <string name="stumbler_export_reset_indic">Restablecer el indicador</string>
 
     <!-- Check BDD -->
     <string name="ck_bdd_btn_download">Descargar</string>
     <string name="ck_bdd_updatde_available">Actualización disponible</string>
     <string name="ck_bdd_up_to_date">Base de datos actualizada</string>
     <string name="ck_bdd_do_update">Actualizar</string>
-    <string name="ck_bdd_header_towers">@string/misc_towers</string>
     <string name="ck_bdd_downloading">Descargando…</string>
     <string name="ck_bdd_download_ok">¡Descarga completa!</string>
     <string name="ck_bdd_download_fail">Error durante la descarga</string>
@@ -255,7 +262,6 @@
     <string name="data_telever">identificaciones subidas</string>
     <string name="data_nodata">Sin datos para enviar</string>
     <string name="data_nodest">Ningún destino seleccionado</string>
-    <string name="exportTitle">Exportar / Compartir</string>
     <string name="alert_pseudo">Recuerda introducir un apodo en Ajustes.</string>
     <string name="no_cell">Ningún dato que transmitir</string>
     <string name="no_data">¡Base vacía!</string>
@@ -300,6 +306,7 @@
     <string name="id_rech_fu">Búsqueda mediante datos LOG/MLS</string>
     <string name="id_rech_ta">Búsqueda a través de datos TA</string>
     <string name="id_reinit_map">Réinitialiser la carte</string>
+    <string name="id_magic_failed">La búsqueda no ha dado resultado o el soporte ya está asignado. Se requiere una investigación adicional</string>
 
     <!-- File explorer -->
     <string name="file_expl_open_text">Ver (Texto)</string>
@@ -343,15 +350,17 @@
     <string name="misc_position">Posición</string>
     <string name="misc_catched">Capturado</string>
     <string name="misc_shared">Compartido</string>
-    <string name="misc_sim_empty">Ausente</string>
+    <string name="misc_missing">Ausente</string>
     <string name="misc_disabled">Desactivado</string>
     <string name="misc_ta_traces">Trazas TA</string>
     <string name="misc_display">Mostrar</string>
-    <string name="misc_error">error</string>
+    <string name="misc_error">Error</string>
+    <string name="misc_connect_error">Error de conexión</string>
     <string name="misc_custom_server">Servidor personalizado</string>
     <string name="misc_freq_approved">proyecto aprobado</string>
     <string name="misc_freq_activated">activado el</string>
     <string name="misc_empty">Vacío</string>
+    <string name="misc_no_result">Sin resultados</string>
     <string name="misc_import">Importar</string>
     <string name="misc_frequency">Frecuencia</string>
     <string name="misc_meters">metros</string>
@@ -359,6 +368,9 @@
     <string name="misc_done">Hecho</string>
     <string name="misc_choose">elegir</string>
     <string name="misc_choose_file">Escolha o ficheiro</string>
+    <string name="misc_height">Altura</string>
+    <string name="misc_identified">Identificado</string>
+    <string name="misc_available">Disponible</string>
 
     <!-- Density -->
     <string name="density_mbs_area">Zona</string>					<!-- max 12 caractères -->
