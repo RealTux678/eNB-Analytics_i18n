@@ -26,6 +26,7 @@
     <string name="action_radio_menu">Phone information</string>
     <string name="action_calc">LCID &lt;-&gt; e/gNB calculation</string>
     <string name="action_search_local">Local search</string>
+    <string name="action_search_support">Search towers</string>
     <string name="action_files">File explorer</string>
     <string name="action_radio_debug">Radio data</string>
     <string name="action_nearby">Nearby me</string>
@@ -39,6 +40,7 @@
     <string name="action_filter">Filter</string>
     <string name="action_new_search">New search</string>
     <string name="action_help">Help</string>
+    <string name="action_changelog">View changelog</string>
     <string name="action_quit">Quit</string>
 
     <!-- Settings -->
@@ -61,6 +63,7 @@
     <string name="setting_dual_sim_descr">To be able to choose which SIM card to use (even if there is only one)</string>
     <string name="setting_sim_to_use_header">SIM to be used for analysis</string>
     <string name="setting_dual_monitoring_descr">Monitor both SIM cards, if present</string>
+    <string name="setting_dual_logging_descr">Record logs from both SIM cards</string>
     <string name="setting_radio_lib_header">Radio library</string>
     <string name="setting_radio_lib_descr">Radio model to use. CAUTION: Changing this setting unnecessarily may degrade the app\'s functionality</string>
     <string name="setting_radio_delay_header">Acquisition delay</string>
@@ -73,7 +76,7 @@
     <string name="setting_bypass_descr">If enabled, the app will ignore database results.</string>
     <string name="setting_api_key_header">API key</string>
     <string name="setting_api_key_descr">To identify yourself as a contributor to the localization service project (optional)</string>
-    <string name="setting_api_key_descr_err_msg">Incorrect format (00000000 per default)</string>
+    <string name="setting_api_key_descr_err_msg">Incorrect format (1000000a per default)</string>
     <string name="setting_recommended_setting">Recommended setting :</string>
     <string name="setting_msg_pseudo_length">The nickname is limited to 20 characters</string>
     <string name="setting_sourcelist_header">Download server</string>
@@ -84,7 +87,7 @@
     <!-- Notification -->
     <string name="notif_record">Recording in progress</string>
     <string name="notif_default_text">Tap to return to the app</string>
-    <string name="notif_button">Stop an quit</string>
+    <string name="notif_button">Stop and quit</string>
 
     <!-- GPS State -->
     <string name="gps_wait">wait fix</string>
@@ -106,7 +109,9 @@
     <string name="main_unsupported_provider">Provider not supported</string>
     <string name="main_radio_menu_alert">Any changes in this menu may cause the phone to malfunction.</string>
     <string name="main_radio_menu_alert_btn">Go there anyway</string>
-    <string name="main_support_attributed">Support already assigned to</string>
+    <string name="main_support_attributed_to">Tower already assigned to</string>
+    <string name="main_support_attributed">Tower already assigned</string>
+    <string name="main_support_not_attributed">Tower not assigned</string>
     <string name="main_alert_notif">• App notification is not displayed</string>
     <string name="main_alert_radio">• Radio data unavailable when screen is off</string>
     <string name="main_alert_unstable">Feature under development / For advanced users</string>   <!-- max 55 caractères -->
@@ -130,7 +135,7 @@
     <string name="main_no_permission_phone">Phone permission Denied</string>
     <string name="main_permission_msg1">Once permissions are granted, you must exit and restart the app</string>
     <string name="main_permission_msg2">For the application to work, permissions must be granted</string>
-    <string name="main_identified">Successfully identified!</string>
+    <string name="main_identified_successfully">Successfully identified!</string>
     <string name="main_attributed">assigned</string>
     <string name="main_clash_attr">already assigned</string>                   <!-- Support s<dfherkj déjà attribué -->
     <string name="main_clash_ident">already identified</string>                 <!-- eNB sdfghrgf déjà identifié -->
@@ -146,9 +151,12 @@
     <string name="main_ask_identify_text2_p1">This will assign the</string>
     <string name="main_ask_identify_text2_p2">to tower</string>
     <string name="main_ask_identify_text3">> This action is not essential for the proper functioning of the app and can become counterproductive if used excessively.</string>
+    <string name="main_ask_identify_swear_box">I put a coin in the piggy jar</string>
     <string name="main_unidentify">Unidentify</string>
     <string name="main_incorrect_input">Incorrect entry or provider</string>
     <string name="main_info_pci_range">The TAC must be between 0 and 1007</string>
+    <string name="main_missing_database">Missing database</string>
+    <string name="main_export_format">Export format</string>
 
 
     <!-- Discover -->
@@ -191,7 +199,7 @@
     <string name="jnl_delete_all_cells_descr">This will erase all collected cells.\n\nThis action is irreversible.\n\nDo you want to continue?</string>
     <string name="jnl_adv_delete_title">Advanced delete</string>
     <string name="jnl_adv_delete_hint">cells will be deleted</string>
-    <string name="jnl_import_csv_descr">Permet de restaurer des cellules capturées avec cette application. Cela n\'inclut pas les identifications.\n\nImporter exclusivement un fichier généré par cette application. Le fichier doit commencer par \"ExportV5_xxxx..\""\n\nRemarque: un import bloque la possibilité de partager les données importées et existantes. Seules les nouvelles cellules capturées/mises à jour seront à nouveau partageables.</string>
+    <string name="jnl_import_csv_descr">Allows you to restore cells captured with this application. This does not include identifications.\n\nImport only a file generated by this application. The file must begin with "ExportV5_xxxx..\"\n\nNote: Importing prevents sharing of imported and existing data. Only newly captured/updated cells will be shareable again.</string>
     <string name="jnl_not_in_search_mode">Not available in search mode</string>
     <string name="col_mbs_analyze_change">Analyze/Modify</string>
 
@@ -206,6 +214,9 @@
     <string name="web_dialog_confid_rememore">Remember my choice and don\'t ask again</string>
     <string name="web_search">Search an eNB</string>
     <string name="web_no_data_msg">Data-free zone. Any log sharing is welcome. It\'s your turn!</string>
+    <string name="web_easter_egg_prompt"><![CDATA[<br>Error : no internet connection<br><u>A</u>bort, <u>R</u>etry, <u>F</u>ail ?]]></string>
+    <string name="web_easter_egg_bad_command">Bad command</string>
+    <string name="web_easter_egg_fail">Fail: no internet connection</string>
 
     <!-- EA Stumbler -->
     <string name="stumbler_btn_txt">Enable observation recording</string>
@@ -224,13 +235,13 @@
     <string name="stumbler_filter_hint">eNB, gNB, CI, TAC or PCI</string>
     <string name="stumbler_upload_in_progress">Upload in progress…</string>
     <string name="stumbler_upload_success">Observations sent successfully!</string>
+    <string name="stumbler_export_reset_indic">Reset export indicator</string>
 
     <!-- Check BDD -->
     <string name="ck_bdd_btn_download">Download</string>
     <string name="ck_bdd_updatde_available">Update available</string>
     <string name="ck_bdd_up_to_date">Database up to date</string>
     <string name="ck_bdd_do_update">Update</string>
-    <string name="ck_bdd_header_towers">Towers</string>
     <string name="ck_bdd_downloading">Downloading…</string>
     <string name="ck_bdd_download_ok">Downloading done!</string>
     <string name="ck_bdd_download_fail">Error while downloading</string>
@@ -246,6 +257,8 @@
     <string name="exp_bt2">2/2 Upload vers btrnc.fr</string>
     <string name="exp_em">Export NetMonster PT…</string>
     <string name="exp_em2">2/2 Upload to bakertelekom</string>
+    <string name="exp_cl">Export CellularFR…</string>
+    <string name="exp_cl2">2/2 Upload to cellularfr.fr</string>
     <string name="exp_ea">Export EA in progress…</string>
     <string name="exp_ea1">1/2 Data preparation</string>
     <string name="exp_ea2">2/2 Upload to enb-analytics.fr</string>
@@ -259,7 +272,6 @@
     <string name="data_telever">identifications uploaded</string>
     <string name="data_nodata">No data to send</string>
     <string name="data_nodest">No destination selected</string>
-    <string name="exportTitle">Export / Share</string>
     <string name="alert_pseudo">Remember to enter a Username in the Settings!</string>
     <string name="no_cell">no data to transmit</string>
     <string name="no_data">Empty database!</string>
@@ -295,6 +307,9 @@
     <string name="main_other_hyp">Other hypothesis:</string>
     <string name="aa_related_hyp">related hypothesis:</string>
     <string name="aa_related_ident">related identification:</string>
+    <string name="aa_missing_db_nm">Missing NM/EA database</string>
+    <string name="aa_missing_db_mls">Missing MLS/OCID database</string>
+    <string name="aa_missing_db_tw">Missing tower database</string>
 
     <!-- Analyse/identification -->
     <string name="id_rech_create">Create new tower</string>
@@ -304,6 +319,7 @@
     <string name="id_rech_fu">Search via LOG/MLS data</string>
     <string name="id_rech_ta">Search via TA data</string>
     <string name="id_reinit_map">Reset map</string>
+    <string name="id_magic_failed">Search unsuccessful or support already assigned. Further investigation is needed ;-)</string>
 
     <!-- File explorer -->
     <string name="file_expl_open_text">Open (as Text)</string>
@@ -346,16 +362,18 @@
     <string name="misc_position">Position</string>
     <string name="misc_catched">Captured</string>
     <string name="misc_shared">Shared</string>
-    <string name="misc_sim_empty">Empty</string>
+    <string name="misc_missing">Missing</string>
     <string name="misc_disabled">Disabled</string>
     <string name="misc_sector_s">sector(s)</string>
     <string name="misc_ta_traces">Traces TA</string>
     <string name="misc_display">Display</string>
     <string name="misc_error">Error</string>
+    <string name="misc_connect_error">Connection error</string>
     <string name="misc_custom_server">Custom server</string>
     <string name="misc_freq_approved">approved project</string>
     <string name="misc_freq_activated">activated on</string>
     <string name="misc_empty">Empty</string>
+    <string name="misc_no_result">No result</string>
     <string name="misc_import">Import</string>
     <string name="misc_frequency">Frequency</string>
     <string name="misc_meters">meters</string>
@@ -363,6 +381,9 @@
     <string name="misc_done">Done</string>
     <string name="misc_choose">choose</string>
     <string name="misc_choose_file">Choose file</string>
+    <string name="misc_height">Height</string>
+    <string name="misc_identified">Identified</string>
+    <string name="misc_available">Available</string>
 
     <!-- Density -->
     <string name="density_mbs_area">Area</string>					        <!-- max 12 caractères -->
