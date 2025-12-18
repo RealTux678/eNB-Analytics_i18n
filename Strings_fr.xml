@@ -92,7 +92,7 @@
     <!-- GPS State -->
     <string name="gps_wait">attente fix</string>
     <string name="gps_pause">Pause</string>
-    <string name="gps_old">trop ancien</string>
+    <string name="gps_old">Trop ancien</string>
     <string name="gps_weak">Imprécis</string>
 
     <!-- Main -->
