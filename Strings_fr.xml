@@ -26,6 +26,7 @@
     <string name="action_radio_menu">Informations téléphone</string>
     <string name="action_calc">Calcul LCID &lt;-&gt; e/gNB</string>
     <string name="action_search_local">Recherche Locale</string>
+    <string name="action_search_support">Rechercher supports</string>
     <string name="action_files">Explorateur de fichiers</string>
     <string name="action_radio_debug">Données radio</string>
     <string name="action_nearby">Autour de moi</string>
@@ -39,6 +40,7 @@
     <string name="action_filter">Filtrer</string>
     <string name="action_new_search">Nouvelle Recherche</string>
     <string name="action_help">Aide</string>
+    <string name="action_changelog">Consulter le journal des modifications</string>
     <string name="action_quit">Quitter</string>
 
     <!-- Settings -->
@@ -61,6 +63,7 @@
     <string name="setting_dual_sim_descr">Pour pouvoir choisir la carte SIM à utiliser (même s\'il n\'y en a qu\'une seule)</string>
     <string name="setting_sim_to_use_header">SIM à utiliser pour l\'analyse</string>
     <string name="setting_dual_monitoring_descr">Monitorer les 2 cartes SIM, si présentes</string>
+    <string name="setting_dual_logging_descr">Enregistrer les logs des 2 cartes SIM</string>
     <string name="setting_radio_lib_header">Librairie radio</string>
     <string name="setting_radio_lib_descr">Modèle radio à utiliser. ATTENTION: Modifier inutilement ce réglage risque de dégrader le fonctionnement de l\'appli</string>
     <string name="setting_radio_delay_header">Délai d\'acquisition</string>
@@ -73,7 +76,7 @@
     <string name="setting_bypass_descr">Si activé, l\'appli ignorera les résultats de la base de donnée</string>
     <string name="setting_api_key_header">Clef API</string>
     <string name="setting_api_key_descr">Pour vous identifier en tant que contributeur au projet de service de localisation (facultatif)</string>
-    <string name="setting_api_key_descr_err_msg">Format incorrect (00000000 par défaut)</string>
+    <string name="setting_api_key_descr_err_msg">Format incorrect (1000000a par défaut)</string>
     <string name="setting_recommended_setting">Réglage recommandé :</string>
     <string name="setting_msg_pseudo_length">Le pseudo est limité à 20 caractères</string>
     <string name="setting_sourcelist_header">Serveur de téléchargement</string>
@@ -106,7 +109,9 @@
     <string name="main_unsupported_provider">Opérateur non pris en charge</string>
     <string name="main_radio_menu_alert">Toute modification dans ce menu peut entrainer un dysfonctionnement du téléphone</string>
     <string name="main_radio_menu_alert_btn">Y aller quand même</string>
-    <string name="main_support_attributed">Support déjà attribué au</string>
+    <string name="main_support_attributed_to">Support déjà attribué au</string>
+    <string name="main_support_attributed">Support déjà attribué</string>
+    <string name="main_support_not_attributed">Support non attribué</string>
     <string name="main_alert_notif">• La notification de l\'appli n\'est pas affichée</string>
     <string name="main_alert_radio">• Données radio indisponibles quand l\'écran est éteint</string>
     <string name="main_alert_unstable">Fonction en cours de dev. / Pour utilisateurs avancés</string>   <!-- max 55 caractères -->
@@ -130,7 +135,7 @@
     <string name="main_no_permission_phone">Permission Téléphone refusée</string>
     <string name="main_permission_msg1">Une fois les permissions accordées, il faut quitter et relancer l\'appli</string>
     <string name="main_permission_msg2">Pour que l\'application puisse fonctionner, les permissions doivent être accordées</string>
-    <string name="main_identified">identifié avec succès !</string>
+    <string name="main_identified_successfully">identifié avec succès !</string>
     <string name="main_attributed">attribué</string>
     <string name="main_clash_attr">déjà attribué</string>                   <!-- Support s<dfherkj déjà attribué -->
     <string name="main_clash_ident">déjà identifié</string>                 <!-- eNB sdfghrgf déjà identifié -->
@@ -147,13 +152,16 @@
     <string name="main_ask_identify_text2_p1">Ceci va attribuer le</string>
     <string name="main_ask_identify_text2_p2">au support</string>
     <string name="main_ask_identify_text3">> Cette action n\'est pas indispensable au bon fonctionnement de l\'appli et peut devenir contre-productive si utilisée à l\'éxcès.</string>
+    <string name="main_ask_identify_swear_box">Je mets une pièce dans la tirelire à identifications</string>
     <string name="main_unidentify">Dé-dentifier</string>
     <string name="main_incorrect_input">Saisie ou opérateur incorrect</string>
     <string name="main_info_pci_range">Le PCI doit être compris entre 0 et 1007</string>
+    <string name="main_missing_database">Base manquante</string>
+    <string name="main_export_format">Format d\'export</string>
 
 
     <!-- Discover -->
-    <string name="discover_no_towers">Pas de données ANFR sur cette zone</string>
+    <string name="discover_no_towers">Pas d\'antennes sur cette zone</string>
     <string name="configure_display_title">Configurer l\'affichage</string>
     <string name="discover_ta_msg_info">La modification ici du facteur de conversion TA ne sera pas sauvegardée. Une fois la bonne valeur déterminée, il faudra positionner ce réglage dans les paramètres.</string>
     <string name="discover_settings_disp_all_sects">Tous les secteurs  (!)</string> <!-- 2 espaces -->
@@ -207,6 +215,9 @@
     <string name="web_dialog_confid_rememore">Mémoriser mon choix et ne plus demander</string>
     <string name="web_search">Rechercher un eNB</string>
     <string name="web_no_data_msg">Zone sans données. Tout partage de logs sera bienvenu. À vous de jouer !</string>
+    <string name="web_easter_egg_prompt"><![CDATA[<br>Erreur : pas de connexion internet<br><u>A</u>bandon, <u>R</u>eprise, <u>E</u>chec ?]]></string>
+    <string name="web_easter_egg_bad_command">Commande incorrecte</string>
+    <string name="web_easter_egg_fail">Echec : pas de connexion internet</string>
 
     <!-- EA Stumbler -->
     <string name="stumbler_btn_txt">Activer l\'enregistrement d\'observations</string>
@@ -225,13 +236,13 @@
     <string name="stumbler_filter_hint">eNB, gNB, CI, TAC ou PCI</string>
     <string name="stumbler_upload_in_progress">Téléversement en cours…</string>
     <string name="stumbler_upload_success">Observations envoyées avec succès !</string>
+    <string name="stumbler_export_reset_indic">Reset indicateur d\'export</string>
 
     <!-- Check BDD -->
     <string name="ck_bdd_btn_download">Télécharger</string>
     <string name="ck_bdd_updatde_available">Mise à jour disponible</string>
     <string name="ck_bdd_up_to_date">Base à jour</string>
     <string name="ck_bdd_do_update">Mettre à jour</string>
-    <string name="ck_bdd_header_towers">ANFR</string>
     <string name="ck_bdd_downloading">Téléchargement en cours…</string>
     <string name="ck_bdd_download_ok">Téléchargement terminé !</string>
     <string name="ck_bdd_download_fail">Erreur lors du téléchargement</string>
@@ -248,6 +259,8 @@
     <string name="exp_ea">Export EA en cours...</string>
     <string name="exp_ea1">1/2 Préparation des données</string>
     <string name="exp_ea2">2/2 Envoi vers enb-analytics.fr</string>
+    <string name="exp_cl">Export CellularFR…</string>
+    <string name="exp_cl2">2/2 Envoi vers cellularfr.fr</string>
     <string name="exp_new_cells">nouvelles cellules</string>
     <string name="exp_nm_progress">Export en cours...</string>
     <string name="exp_ntm">Export au format NetMonster</string>
@@ -258,7 +271,6 @@
     <string name="data_telever">identifications téléversées</string>
     <string name="data_nodata">Aucune donnée à envoyer</string>
     <string name="data_nodest">Aucune destination sélectionnée</string>
-    <string name="exportTitle">Export / Partage</string>
     <string name="alert_pseudo">Pensez à saisir un Pseudo dans les Paramètres !</string>
     <string name="no_cell">aucune donnée à transmettre</string>
     <string name="no_data">Base vide !</string>
@@ -294,6 +306,9 @@
     <string name="main_other_hyp">Autre hypothèse :</string>
     <string name="aa_related_hyp">hypothèse associée :</string>
     <string name="aa_related_ident">identification associée :</string>
+    <string name="aa_missing_db_nm">Base NM/EA non installée</string>
+    <string name="aa_missing_db_mls">Base MLS/OCID manquante</string>
+    <string name="aa_missing_db_tw">Base antennes manquante</string>
 
     <!-- Analyse/identification -->
     <string name="id_rech_create">Créer nouveau support</string>
@@ -303,6 +318,7 @@
     <string name="id_rech_fu">Rech. via données LOG/MLS</string>
     <string name="id_rech_ta">Recherche via données TA</string>
     <string name="id_reinit_map">Réinitialiser la carte</string>
+    <string name="id_magic_failed">Recherche infructueuse ou support déjà attribué. Il va falloir pousser les investigations ;-)</string>
 
     <!-- File explorer -->
     <string name="file_expl_open_text">Voir (Texte)</string>
@@ -345,16 +361,18 @@
     <string name="misc_position">Position</string>
     <string name="misc_catched">Capturé</string>
     <string name="misc_shared">Partagé</string>
-    <string name="misc_sim_empty">Absente</string>
+    <string name="misc_missing">Absente</string>
     <string name="misc_disabled">Désactivé</string>
     <string name="misc_sector_s">secteur(s)</string>
     <string name="misc_ta_traces">Traces TA</string>
     <string name="misc_display">Afficher</string>
     <string name="misc_error">Erreur</string>
+    <string name="misc_connect_error">Erreur de connexion</string>
     <string name="misc_custom_server">Serveur personnalisé</string>
     <string name="misc_freq_approved">projet approuvé</string>
     <string name="misc_freq_activated">activé le</string>
     <string name="misc_empty">Vide</string>
+    <string name="misc_no_result">Aucun résultat</string>
     <string name="misc_import">Import</string>
     <string name="misc_frequency">Fréquence</string>
     <string name="misc_meters">mètres</string>
@@ -362,6 +380,9 @@
     <string name="misc_done">Terminé</string>
     <string name="misc_choose">choisir</string>
     <string name="misc_choose_file">Choisir fichier</string>
+    <string name="misc_height">Hauteur</string>
+    <string name="misc_identified">Identifié</string>
+    <string name="misc_available">Disponible</string>
 
     <!-- Density -->
     <string name="density_mbs_area">Zone</string>					        <!-- max 12 caractères -->
@@ -399,4 +420,6 @@
     <string name="first_screen_view_policy">Voir la politique de confidentialité</string>
     <string name="next_screen_header">Comment ça fonctionne ?</string>
     <string name="next_screen_content"><![CDATA[Le but est de capturer le maximum de cellules lors de différents déplacements.<br><br>L\'appli affiche des hypothèses <b>pas forcément fiables</b>, car ça dépend des données disponibles. Ces hypothèses seront <b>automatiquement recalculées</b> au fur et à mesure ; d\'où l\'importance de capturer de nouvelles données et ne pas se précipiter pour \"identifier\".<br><br>Pensez à partager vos cellules afin de faire avancer le projet !]]></string>
+
+
 </resources>
