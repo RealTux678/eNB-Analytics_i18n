@@ -12,12 +12,14 @@
     <string name="nav_export">Exportar / Compartir</string>
     <string name="nav_bdd">Bases de datos</string>
     <string name="nav_collection">Identificaciones</string>
+    <string name="nav_signal">Señal</string>
 
     <!-- Option Menu -->
     <string name="action_analysis">Analizar</string>
     <string name="action_always_on">Siempre activo</string>
     <string name="action_hud">Head-up Display</string>
-    <string name="action_traces">Gua. Trazas TA</string>	<!-- /!\ déprécié ! -->
+    <string name="action_traces">Registrar la señal</string>
+    <string name="action_reset_display">Reiniciar la pantalla</string>
     <string name="action_submenu_more">Más...</string>
     <string name="action_submenu_advanced">Avanzado...</string>
     <string name="action_submenu_backup">Guardar...</string>
@@ -41,6 +43,8 @@
     <string name="action_new_search">Nueva búsqueda</string>
     <string name="action_help">Ayuda</string>
     <string name="action_changelog">Ver registro de cambios</string>
+    <string name="action_export_csv">Exportar a CSV</string>
+    <string name="action_show_details">Mostrar detalles</string>
     <string name="action_quit">Salir</string>
 
     <!-- Settings -->
@@ -72,16 +76,17 @@
     <string name="setting_gnb_header">Cálculo gNB 5G-SA \"Standalone\"</string>
     <string name="setting_gnb_descr">No se aplica a 5G NSA (4G+5G)</string>
     <string name="setting_unstable_header">Función(es) experimental(es)</string>
+    <string name="setting_bypass_header">Omitir la base de datos de NM/EA</string>
     <string name="setting_bypass_descr">Si está habilitado, la aplicación ignorará los resultados de la base de datos.</string>
     <string name="setting_api_key_header">Clave API</string>
     <string name="setting_api_key_descr">Para identificarse como colaborador del proyecto de servicio de localización (opcional)</string>
     <string name="setting_api_key_descr_err_msg">Formato incorrecto (predeterminado 1000000a)</string>
     <string name="setting_recommended_setting">Configuración recomendada:</string>
     <string name="setting_msg_pseudo_length">El apodo está limitado a 20 caracteres</string>
-    <string name="setting_sourcelist_header">Servidor de descargas</string>
     <string name="setting_bdd_source_path">URL de servidor personalizada</string>
     <string name="setting_bdd_source_path_descr">URL del archivo de índice</string>
     <string name="setting_unstable_descr">Habilitar funciones en desarrollo. Precaución: Riesgo de fallos, pérdida de datos, etc.</string>
+    <string name="setting_legacy_monitor_descr">Restaure el monitor de la generación anterior (v4/v5.3). Reinicie la aplicación.</string>
 
     <!-- Notification -->
     <string name="notif_record">Grabación en curso</string>
@@ -115,7 +120,7 @@
     <string name="main_alert_radio">• Datos radio no disponibles cuando la pantalla está apagada</string>
     <string name="main_alert_unstable">Función en desarrollo / Para usuarios avanzados</string>
     <string name="syst_update_dial_title">Actualización</string>
-    <string name="syst_update_dial_descr">Una actualización de la aplicación está disponible\n\nVisite enb-analytics.fr para más detalles.</string>
+    <string name="syst_update_dial_descr">Una actualización de la aplicación está disponible\n\nVaya a Play Store o a enb-analytics.fr para obtener más detalles.</string>
     <string name="syst_update_toast">Una actualización de la aplicación está disponible!</string>
     <string name="main_more_details">más detalles</string>
     <string name="syst_no_internet_toast">Sin conexión Internet.\nRevisa la configuración red móvil o WIFI</string>
@@ -127,8 +132,9 @@
     <string name="main_no_data_to_analyse">Sin datos a analizar</string>
     <string name="main_no_tower_to_analyse">Sin soporte a analizar</string>
     <string name="main_no_tower_found">No se encontró antena</string>
-    <string name="main_trace_recorded">Traza grabada</string>
-    <string name="main_no_trace">Ningún punto TA disponible</string>
+    <string name="main_no_trace_detection">Sin detección</string>
+    <string name="main_ta_point_recorded">Traza grabada</string>
+    <string name="main_no_ta_point">Ningún punto TA disponible</string>
     <string name="main_service_stopped">Servicio de radio interrumpido</string>
     <string name="main_no_permission_gps">Permiso localización exacta denegada</string>
     <string name="main_no_permission_phone">Permiso Telefono denegado</string>
@@ -155,18 +161,43 @@
     <string name="main_info_pci_range">El TAC debe estar entre 0 y 1007</string>
     <string name="main_missing_database">Base de datos faltante</string>
     <string name="main_export_format">Formato de exportación</string>
+    <string name="main_deprecated_function">Función obsoleta</string>
+    <string name="main_beta_function">Función en desarrollo</string>
+    <string name="main_label_speed_5char">Vlcd.</string>   <!-- max 5 caractères -->
+    <string name="main_position_deleted">Posición eliminada</string>
+    <string name="main_observation_deleted">Observación eliminada</string>
+    <string name="main_import_in_progress">Importación en curso…</string>
+    <string name="main_import_cells">Importar celdas (registros)</string>
+    <string name="main_import_identif">Importar asignaciones de antena</string>
+    <string name="main_import_signal">Importar datos de señal</string>
+    <string name="main_export_cells">Exportar celdas</string>
+    <string name="main_export_identif">Exportar las asignaciones de antenas</string>
+    <string name="main_export_signal">Exportar datos de señal</string>
+    <string name="main_analysis_in_progress">Análisis…</string>
+    <string name="main_calc_hint">eNB/gNB o LCID</string>
+    <string name="main_exported_to">Exportado a</string>
 
 
     <!-- Discover -->
     <string name="discover_no_towers">Sin datos en esta zona</string>
     <string name="configure_display_title">Configurar la pantalla</string>
     <string name="discover_ta_msg_info">Los cambios en el factor de conversión TA no se guardarán. Una vez determinado el valor correcto, deberá configurarse en los parámetros.</string>
-    <string name="discover_settings_disp_all_sects">Todos los sectores (!)</string>
+    <string name="discover_settings_disp_all_sects">Mostrar sectores</string>
     <string name="discover_settings_disp_all">Todo</string>
     <string name="discover_settings_disp_enb">e/gNB actual</string>
+    <string name="discover_settings_sparse">Aclarar</string>
     <string name="discover_settings_links">Campo</string>
     <string name="discover_settings_ta_circle">Círculo TA</string>
+    <string name="discover_settings_freq_title">Seleccionar frecuencias</string>
+    <string name="discover_settings_freq_match_all">Coincidir con todas las condiciones seleccionadas</string>
+    <string name="discover_settings_freq_eclude_sel">Excluir selección</string>
     <string name="discover_mbs_goto">&#160;&#160;&#160;&#160;Ve allí</string>   <!-- préserver les 4 espaces devant -->
+    <string name="discover_zoom_btn">Zoom +</string>
+    <string name="discover_zoom_limit_msg">No se muestran todas las antenas. Por favor, haga zoom.</string>
+    <string name="discover_freq_filter">Filtrado de frecuencia</string>
+
+    <!-- Monitor data -->
+    <string name="monitor_data_export_toast">medidas escritas en el archivo</string>
 
     <!-- Journal -->
     <string name="jnl_mbs_delete_cell">"   Afuera !"</string>       <!-- préserver les 3 espaces devant -->
@@ -184,10 +215,13 @@
     <string name="jnl_delete_msg_p2">se eliminará en unos segundos</string>
     <string name="jnl_sort_date">Por fecha (predeterminado)</string>
     <string name="jnl_sort_egnb">Por e/gNB</string>
+    <string name="jnl_sort_tower">Por antena</string>
     <string name="jnl_sort_provider">Por operador</string>
     <string name="jnl_sort_year">Por año</string>
     <string name="jnl_sort_signal">Intensidad de la señal</string>
     <string name="jnl_sort_not_shared">No compartido</string>
+    <string name="jnl_obsolete">Obsoleto</string>
+    <string name="jnl_check_4_obsolete">Revisar las antenas obsoletas</string>
     <string name="jnl_overflow_display_all">Ver el periódico completo</string>
     <string name="jnl_overflow_display_more">Ver más</string>
     <string name="jnl_overflow_display_xxx_cells">Mostrar las</string>
@@ -199,7 +233,14 @@
     <string name="jnl_adv_delete_hint">células serán eliminadas</string>
     <string name="jnl_import_csv_descr">Permite restaurar celdas capturadas con esta aplicación. Esto no incluye los ID.\n\nImportar solo archivos generados por esta aplicación. El archivo debe comenzar con \"ExportV5_xxxx..\"\n\nNota: Una importación impide compartir datos importados y existentes. Solo se podrán volver a compartir las celdas recién capturadas o actualizadas.</string>
     <string name="jnl_not_in_search_mode">No disponible en el modo de búsqueda</string>
+    <string name="jnl_logs_deleted">Células eliminadas</string>
+    <string name="jnl_import_csv_data">Importación de datos CSV</string>
+    <string name="jnl_check_obsolete_msg">Búsqueda de antenas obsoletas. No interrumpir.</string>
+    <string name="jnl_check_obsolete_result_ok">¡Perfecto! Ninguna antena obsoleta.</string>
+    <string name="jnl_check_obsolete_result_ko">antenas obsoletas\nBotón "ordenar" para restablecer la visualización normal.</string>
     <string name="col_mbs_analyze_change">Analizar/Modificar</string>
+    <string name="col_mbs_search_tower_prox">"   Buscar antena cercana"</string>    <!-- préserver les 3 espaces devant -->
+    <string name="col_delete_identifications">Eliminar identificaciones</string>
 
     <!-- Carte WEB -->
     <string name="web_perm_error">Error. ¿Están otorgados los permisos?</string>
@@ -216,7 +257,7 @@
 
     <!-- EA Stumbler -->
     <string name="stumbler_btn_txt">Activar el registro de observaciones</string>
-    <string name="stumbler_display_today">Datos de Hoy</string>
+    <string name="stumbler_display_today">Datos de hoy</string>
     <string name="stumbler_abstract">observacion(es). Hoy :</string>
     <string name="stumbler_no_data_today">No hay datos hoy</string>
     <string name="stumbler_rest2send">Queda por enviar :</string>
@@ -232,6 +273,11 @@
     <string name="stumbler_upload_in_progress">Subida en progreso…</string>
     <string name="stumbler_upload_success">¡Observaciones enviadas exitosamente!</string>
     <string name="stumbler_export_reset_indic">Restablecer el indicador</string>
+    <string name="stumbler_info_mls_format"><![CDATA[Más información sobre el formato de envío MLS <a href=\'https://ichnaea.readthedocs.io/en/stable/api/geosubmit2.html\'>https://ichnaea.readthedocs.io/en/stable/api/geosubmit2.html</a>]]></string>
+    <string name="stumbler_obs_details">Detalles de la observación</string>
+    <string name="stumbler_delete_all">¿Borrar datos de señal?</string>
+    <string name="stumbler_delete_all_descr">Esto borrará todos los datos de señal (observaciones). Los registros no se verán afectados.\n\n¿Desea continuar?</string>
+    <string name="stumbler_data_deleted">Datos eliminados</string>
 
     <!-- Check BDD -->
     <string name="ck_bdd_btn_download">Descargar</string>
@@ -253,8 +299,9 @@
     <string name="exp_ea1">1/2 Preparación de datos</string>
     <string name="exp_ea2">2/2 Enviar a enb-analytics.fr</string>
     <string name="exp_new_cells">nuevas celdas</string>
-    <string name="exp_nm_progress">Exportación en curso...</string>
+    <string name="exp_in_progress">Exportación en curso...</string>
     <string name="exp_ntm">Exportación en formato NetMonster</string>
+    <string name="exp_csv">Exportar a formato CSV</string>
     <string name="cell_telever">celdas subidas</string>
     <string name="cell_export">celdas escritas</string>
     <string name="data_telever_thanks">Gracias !</string>
@@ -267,7 +314,6 @@
     <string name="no_data">¡Base vacía!</string>
     <string name="cell_collect">celdas recolectadas</string>
     <string name="cell_shared">celdas compartidas</string>
-    <string name="cell_collect_p2">eNB)</string>
     <string name="cell_collect_up">a enviar</string>
     <string name="supp_identif">Identificaciones</string>
     <string name="supp_hyp">Hipótesis&#160;&#160;(</string>
@@ -278,25 +324,32 @@
     <string name="exp_ident_wait">identificacion(es) disponible(s)</string>
     <string name="exp_data_wait">dato(s) disponible(s)</string>
     <string name="exp_csv_snack">¡Datos exportados!</string>
-    <string name="exp_trcs_snack">¡Trazas exportadas!</string>
+    <string name="exp_trcs_exported">¡Trazas exportadas!</string>
+    <string name="exp_cells_exported">¡Células exportadas!</string>
     <string name="exp_sql_snack">¡Base SQLite exportada!</string>
     <string name="exp_up_ea_msg">Comparte tus registros con el proyecto para mejorar la base de datos. Los resultados, si son utilizables, se verán en el sitio web y la aplicación.\nLas celdas son importantes para el proyecto. Sin embargo, las identificaciones no se tienen en cuenta sistemáticamente.</string>
     <string name="exp_up_3rd_msg">Compartir con proyectos de terceros. Si tiene alguna pregunta o problema, contáctelos directamente.</string>
-    <string name="exp_data_roaming">No disponible</string>
     <string name="exp_error_3rd_party">Error. Envío a servidor de terceros: consulte directamente con el proyecto en cuestión.</string>
     <string name="exp_export_info_title">Células compartidas</string>
+    <string name="exp_export_sqlite">Exportar base de datos SQLite</string>
+    <string name="exp_export_ntm">Exportar archivo .ntm</string>
+    <string name="exp_ntm_only_identif">Únicamente las antenas identificadas</string>
+    <string name="exp_ntm_only_new">Solo los eNB que no están en la base NM</string>
+    <string name="exp_ntm_add_id_sup">Añadir el sufijo #Support</string>
 
     <!-- Analytics -->
     <string name="aa_not_identified">no identificado</string>
     <string name="aa_found_single">encontrado</string>
     <string name="aa_found">encontrados</string>
-    <string name="aa_no_data">Sin datos</string>
     <string name="aa_weak_data">Datos insuficientes</string>
     <string name="aa_limited_data">Capturar más datos</string>
     <string name="aa_ambiguous">Ambigüedad</string>
     <string name="main_other_hyp">Otra hipótesis:</string>
     <string name="aa_related_hyp">hipótesis asociada:</string>
     <string name="aa_related_ident">identificación asociada:</string>
+    <string name="aa_missing_db_nm">Falta la base de datos NM/EA</string>
+    <string name="aa_missing_db_mls">Falta la base de datos MLS/OCID</string>
+    <string name="aa_missing_db_tw">Falta la base de datos de antenas</string>
 
     <!-- Analyse/identification -->
     <string name="id_rech_create">Crear nuevo soporte</string>
@@ -307,6 +360,15 @@
     <string name="id_rech_ta">Búsqueda a través de datos TA</string>
     <string name="id_reinit_map">Réinitialiser la carte</string>
     <string name="id_magic_failed">La búsqueda no ha dado resultado o el soporte ya está asignado. Se requiere una investigación adicional</string>
+    <string name="id_rech_manu_msg">Seleccione una antena o mueva el mapa</string>
+    <string name="id_searching_obs">Buscando observaciones…</string>
+    <string name="id_new_tower_disclaimer">¡Úselo solo como último recurso!\n\nLa incorporación de soportes distintos a la base de datos oficial de antenas queda fuera del ámbito del proyecto eNB Analytics. Dichas incorporaciones permanecerán almacenadas localmente en su teléfono.\n\nEl objetivo del proyecto eNB Analytics es el análisis automatizado de datos.
+Todo el proyecto es gestionado por una sola persona, por lo que no es posible dedicar tiempo a tareas de moderación. Gracias por su comprensión.</string>
+    <string name="id_new_tower_txt">Colocar el soporte sobre el mapa. Aumentar el zoom para mayor precisión</string>
+    <string name="id_canceled_action">Acción anulada</string>
+    <string name="id_understood">He entendido</string>
+    <string name="id_new_tower_type_name">Introducir un nombre</string>
+    <string name="id_new_tower_new_tower">Nueva antena</string>
 
     <!-- File explorer -->
     <string name="file_expl_open_text">Ver (Texto)</string>
@@ -316,6 +378,7 @@
     <string name="file_expl_favorite_folder">Arquivo favorito</string>
     <string name="file_expl_parent_folder">Carpeta principal</string>
     <string name="file_expl_use_android_explorer">Utilice el explorador de Android</string>
+    <string name="file_expl_ask_delete_descr">¿Eliminar el archivo</string>
     <string name="file_rdr_large_file_msg_p1">Sólo se muestran las primeras</string>
     <string name="file_rdr_large_file_msg_p2">líneas</string>
     <string name="file_rdr_action_goto_end">Ver el final</string>
@@ -333,8 +396,8 @@
     <string name="misc_delete">Borrar</string>
     <string name="misc_cell">Celda</string>
     <string name="misc_cells">Celdas</string>
-    <string name="misc_support">Soporte</string>
-    <string name="misc_supports">Soportes</string>
+    <string name="misc_tower">Soporte</string>
+    <string name="misc_towers">Antenas</string>
     <string name="misc_confident">Confidencialidad</string>
     <string name="misc_order_mode">Modo de clasificación</string>
     <string name="misc_search">Buscar</string>
@@ -344,7 +407,6 @@
     <string name="misc_file_format_mismatch">Formato de archivo incorrecto</string>
     <string name="misc_pause">Pausar</string>
     <string name="misc_auto">Automático</string>
-    <string name="misc_towers">Antenas</string>
     <string name="misc_sector_s">sector(es)</string>
     <string name="misc_provider">Operador</string>
     <string name="misc_position">Posición</string>
@@ -356,6 +418,7 @@
     <string name="misc_display">Mostrar</string>
     <string name="misc_error">Error</string>
     <string name="misc_connect_error">Error de conexión</string>
+    <string name="misc_server_endpoint">Servidor de destino</string>
     <string name="misc_custom_server">Servidor personalizado</string>
     <string name="misc_freq_approved">proyecto aprobado</string>
     <string name="misc_freq_activated">activado el</string>
@@ -370,7 +433,21 @@
     <string name="misc_choose_file">Escolha o ficheiro</string>
     <string name="misc_height">Altura</string>
     <string name="misc_identified">Identificado</string>
+    <string name="misc_hypothese_s">Hipótesis</string>
+    <string name="misc_other_hypothese_s">Otras hipótesis</string>
+    <string name="misc_attribute_to">Asignar a</string>
     <string name="misc_available">Disponible</string>
+    <string name="misc_deprecated">En desuso</string>
+    <string name="misc_incorrect_url">URL incorrecta</string>
+    <string name="misc_unavailable">No disponible</string>
+    <string name="misc_no_data">Sin datos</string>
+    <string name="misc_normal">Normal</string>
+    <string name="misc_with">con</string>
+    <string name="misc_observations_s">Observación(es)</string>
+    <string name="misc_impossible_action">Acción imposible</string>
+    <string name="misc_samples">muestras</string>
+    <string name="misc_important">Importante</string>
+
 
     <!-- Density -->
     <string name="density_mbs_area">Zona</string>					<!-- max 12 caractères -->
@@ -402,6 +479,7 @@
     <string name="first_screen_p2_bis">La aplicación mostrará supuestos que no son necesariamente fiables al principio, ya que dependen de los datos disponibles. Estos supuestos se recalcularán automáticamente a medida que avance; de ahí la importancia de capturar nuevos datos y no precipitarse a &quot;identificar&quot;.</string>
     <string name="first_screen_p3_header">Comunidad</string>
     <string name="first_screen_p3">Sin datos, esta aplicación y el proyecto no existirían. Le recomendamos que comparta sus celdas para que otros usuarios de la aplicación y/o visitantes del sitio puedan beneficiarse de ellas.</string>
+    <string name="first_screen_p3a">- El proyecto es de carácter voluntario y totalmente desinteresado.\n- Si encuentra dificultades o algún error, por favor póngase en contacto conmigo. Los datos de contacto están disponibles en la sección de Ayuda y en la ventana «Acerca de».\n- Esta aplicación está dirigida a un público con conocimientos previos y/o motivado. En el sitio web encontrará documentación disponible.\n- Esta aplicación es gratuita y no contiene publicidad. Su desarrollo conlleva un trabajo considerable. Este modelo tiene sus limitaciones, por lo que pueden persistir algunas imperfecciones.</string>
     <string name="first_screen_p4_header">Ubicación exacta</string>
     <string name="first_screen_p4">Esta aplicación necesita permisos exactos de localización y llamadas telefónicas para permitir la monitorización por radio y la geolocalización de las celdas capturadas.</string>
     <string name="first_screen_p5">La localización sólo se utiliza cuando la grabación está activa. Una notificación te informa de esto.</string>
