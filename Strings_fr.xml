@@ -12,12 +12,14 @@
     <string name="nav_export">Export / Partage</string>
     <string name="nav_bdd">Bases de données</string>
     <string name="nav_collection">Identifications</string>
+    <string name="nav_signal">Signal</string>
 
     <!-- Option Menu -->
     <string name="action_analysis">Analyser</string>
     <string name="action_always_on">Toujours actif</string>
     <string name="action_hud">Head-up Display</string>
-    <string name="action_traces">Enr. Traces TA</string>	<!-- /!\ déprécié ! -->
+    <string name="action_traces">Enregistrer signal</string>
+    <string name="action_reset_display">Réinitialiser la vue</string>
     <string name="action_submenu_more">Plus...</string>
     <string name="action_submenu_advanced">Avancé...</string>
     <string name="action_submenu_backup">Sauvegarde...</string>
@@ -41,12 +43,17 @@
     <string name="action_new_search">Nouvelle Recherche</string>
     <string name="action_help">Aide</string>
     <string name="action_changelog">Consulter le journal des modifications</string>
+    <string name="action_export_csv">Exporter en CSV</string>
+    <string name="action_show_details">Voir les détails</string>
     <string name="action_quit">Quitter</string>
 
     <!-- Settings -->
     <string name="sub_settings_main">Général</string>
     <string name="sub_settings_monitor_map">Moniteur / Carte Locale</string>
     <string name="sub_settings_expert">Expert</string>
+    <string name="sub_settings_tc">Couplage Tower Collector (Android &lt; 14)</string>
+    <string name="sub_settings_tc_descr">Application disponible sur Play Store et F-Droid</string>
+    <string name="sub_settings_intents">Intents Android personnalisés</string>
     <string name="setting_pseudo_header">Pseudo</string>
     <string name="setting_pseudo_descr">Pour vous identifier en tant que contributeur</string>
     <string name="setting_theme_header">Thème</string>
@@ -73,16 +80,20 @@
     <string name="setting_gnb_header">Calcul gNB 5G-SA \"Standalone\"</string>
     <string name="setting_gnb_descr">Ne concerne pas la 5G NSA (4G+5G)</string>
     <string name="setting_unstable_header">Fonction(s) éxpérimentale(s)</string>
+    <string name="setting_bypass_header">Bypass base NM/EA</string>
     <string name="setting_bypass_descr">Si activé, l\'appli ignorera les résultats de la base de donnée</string>
     <string name="setting_api_key_header">Clef API</string>
     <string name="setting_api_key_descr">Pour vous identifier en tant que contributeur au projet de service de localisation (facultatif)</string>
     <string name="setting_api_key_descr_err_msg">Format incorrect (1000000a par défaut)</string>
     <string name="setting_recommended_setting">Réglage recommandé :</string>
     <string name="setting_msg_pseudo_length">Le pseudo est limité à 20 caractères</string>
-    <string name="setting_sourcelist_header">Serveur de téléchargement</string>
     <string name="setting_unstable_descr">Activer des fonctions en cours de développement. Attention : risques de crash, de perte de données, etc..</string>
     <string name="setting_bdd_source_path">URL du serveur personnalisé</string>
     <string name="setting_bdd_source_path_descr">URL vers le fichier d\'index</string>
+    <string name="setting_tc_start_stop_descr">Si activé, Tower Collector se lancera et s\'arrêtera en même temps que cette appli</string>
+    <string name="setting_auto_up_descr">Uploader les données à l\'arrêt de l\'enregistrement selon les paramètres définis dans TC</string>
+    <string name="setting_enable_intents_header">Activer les intents personnalisés</string>
+    <string name="setting_legacy_monitor_descr">Rétablir le moniteur ancienne génération (v4/v5.3). Relancer l\'appli</string>
 
     <!-- Notification -->
     <string name="notif_record">Enregistrement en cours</string>
@@ -116,7 +127,7 @@
     <string name="main_alert_radio">• Données radio indisponibles quand l\'écran est éteint</string>
     <string name="main_alert_unstable">Fonction en cours de dev. / Pour utilisateurs avancés</string>   <!-- max 55 caractères -->
     <string name="syst_update_dial_title">Mise à jour</string>
-    <string name="syst_update_dial_descr">Une mise à jour de l\'appli est disponible\n\nVisitez le site enb-analytics.fr pour plus de détails.</string>
+    <string name="syst_update_dial_descr">Une mise à jour de l\'appli est disponible !\n\nRendez-vous sur le Play Store ou visitez le site enb-analytics.fr pour plus de détails.</string>
     <string name="syst_update_toast">Une mise à jour de l\'appli est disponible !</string>
     <string name="main_more_details">+ de détails</string>
     <string name="syst_no_internet_toast">Aucune connexion internet.\nVérifiez les paramètres réseau mobile ou WIFI</string>
@@ -128,8 +139,9 @@
     <string name="main_no_data_to_analyse">Aucune donnée à analyser</string>
     <string name="main_no_tower_to_analyse">Aucun support à analyser</string>
     <string name="main_no_tower_found">Aucun support trouvé</string>
-    <string name="main_trace_recorded">Trace enregistrée</string>
-    <string name="main_no_trace">Aucun point TA disponible</string>
+    <string name="main_no_trace_detection">Aucune détection</string>
+    <string name="main_ta_point_recorded">Trace enregistrée</string>
+    <string name="main_no_ta_point">Aucun point TA disponible</string>
     <string name="main_service_stopped">Service radio arrêté</string>
     <string name="main_no_permission_gps">Permission localisation exacte refusée</string>
     <string name="main_no_permission_phone">Permission Téléphone refusée</string>
@@ -158,18 +170,43 @@
     <string name="main_info_pci_range">Le PCI doit être compris entre 0 et 1007</string>
     <string name="main_missing_database">Base manquante</string>
     <string name="main_export_format">Format d\'export</string>
+    <string name="main_deprecated_function">Fonction dépréciée</string>
+    <string name="main_beta_function">Fonction en cours de developpement</string>
+    <string name="main_label_speed_5char">Vit.</string>   <!-- max 5 caractères -->
+    <string name="main_position_deleted">Position supprimée</string>
+    <string name="main_observation_deleted">Observation supprimée</string>
+    <string name="main_import_in_progress">Import en cours…</string>
+    <string name="main_import_cells">Import cellules (logs)</string>
+    <string name="main_import_identif">Import Identifications</string>
+    <string name="main_import_signal">Import observations</string>
+    <string name="main_export_cells">Export cellules (logs)</string>
+    <string name="main_export_identif">Export identifications</string>
+    <string name="main_export_signal">Export observations</string>
+    <string name="main_analysis_in_progress">Analyse…</string>
+    <string name="main_calc_hint">eNB/gNB ou LCID</string>
+    <string name="main_exported_to">Exporté vers</string>
 
 
     <!-- Discover -->
     <string name="discover_no_towers">Pas d\'antennes sur cette zone</string>
     <string name="configure_display_title">Configurer l\'affichage</string>
     <string name="discover_ta_msg_info">La modification ici du facteur de conversion TA ne sera pas sauvegardée. Une fois la bonne valeur déterminée, il faudra positionner ce réglage dans les paramètres.</string>
-    <string name="discover_settings_disp_all_sects">Tous les secteurs  (!)</string> <!-- 2 espaces -->
+    <string name="discover_settings_disp_all_sects">Afficher les secteurs</string>
     <string name="discover_settings_disp_all">Toutes</string>
     <string name="discover_settings_disp_enb">e/gNB actuel</string>
+    <string name="discover_settings_sparse">Clairsemer</string>
     <string name="discover_settings_links">Liens</string>
     <string name="discover_settings_ta_circle">Cercle TA</string>
+    <string name="discover_settings_freq_title">Sélectionner fréquences</string>
+    <string name="discover_settings_freq_match_all">Cumuler toutes les sélections</string>
+    <string name="discover_settings_freq_eclude_sel">Exclure la sélection</string>
     <string name="discover_mbs_goto">&#160;&#160;&#160;&#160;Y aller</string>                   <!-- préserver les 4 espaces devant -->
+    <string name="discover_zoom_btn">Zoomer</string>
+    <string name="discover_zoom_limit_msg">Certains supports ne sont pas affichés. Veuillez zoomer en avant</string>
+    <string name="discover_freq_filter">Filtrage par fréquence</string>
+
+    <!-- Monitor data -->
+    <string name="monitor_data_export_toast">mesures écrites dans le fichier</string>
 
     <!-- Journal -->
     <string name="jnl_mbs_delete_cell">"   Supprimer cette cellule"</string><!-- préserver les 3 espaces devant -->
@@ -187,10 +224,13 @@
     <string name="jnl_delete_msg_p2">va être supprimée dans quelques secondes</string>
     <string name="jnl_sort_date">Par date (défaut)</string>
     <string name="jnl_sort_egnb">Par e/gNB</string>
+    <string name="jnl_sort_tower">Par # support</string>
     <string name="jnl_sort_provider">Par opérateur</string>
     <string name="jnl_sort_year">Par année</string>
     <string name="jnl_sort_signal">Force du signal</string>
     <string name="jnl_sort_not_shared">Non partagé</string>
+    <string name="jnl_obsolete">Obsolète</string>
+    <string name="jnl_check_4_obsolete">Check ANFR_ID obsolètes</string>
     <string name="jnl_overflow_display_all">Voir le journal entier</string>
     <string name="jnl_overflow_display_more">Voir plus</string>
     <string name="jnl_overflow_display_xxx_cells">Afficher toutes les</string>
@@ -202,7 +242,14 @@
     <string name="jnl_adv_delete_hint">cellules seront supprimées</string>
     <string name="jnl_import_csv_descr">Permet de restaurer des cellules capturées avec cette application. Cela n\'inclut pas les identifications.\n\nImporter exclusivement un fichier généré par cette application. Le fichier doit commencer par \"ExportV5_xxxx..\""\n\nRemarque: un import bloque la possibilité de partager les données importées et existantes. Seules les nouvelles cellules capturées/mises à jour seront à nouveau partageables.</string>
     <string name="jnl_not_in_search_mode">Fonction impossible en mode recherche</string>
+    <string name="jnl_logs_deleted">Logs supprimés</string>
+    <string name="jnl_import_csv_data">Import de données CSV</string>
+    <string name="jnl_check_obsolete_msg">Recherche de supports_ID obsolètes. Ne pas interrompre</string>
+    <string name="jnl_check_obsolete_result_ok">Parfait ! Aucun support obsolète</string>
+    <string name="jnl_check_obsolete_result_ko">support(s) obsolète(s).\nBouton "trier" pour remettre l\'affichage normal</string>
     <string name="col_mbs_analyze_change">Analyser/Modifier</string>
+    <string name="col_mbs_search_tower_prox">"   Rechercher support à proximité"</string>    <!-- préserver les 3 espaces devant -->
+    <string name="col_delete_identifications">Éffacer Identifications</string>
 
     <!-- Carte WEB -->
     <string name="web_perm_error">Erreur. Les permissions sont-elles accordées ?</string>
@@ -211,7 +258,7 @@
     <string name="web_no_location">Localisation impossible. Utilisation de la dernière position connue.</string>
     <string name="web_change_map">Choisir opérateur</string>
     <string name="web_type_error">Erreur dans la saisie</string>
-    <string name="web_dialog_confid">Souhaitez-vous partager votre géolocalisation via la requête afin que la carte soit directement centrée sur votre secteur ? Cette donnée n\'est pas stockée ou transmise à des tiers.</string>
+    <string name="web_dialog_confid">Souhaitez-vous envoyer votre géolocalisation via la requête afin que la carte soit directement centrée sur votre secteur ? Cette donnée n\'est pas stockée ou transmise à des tiers.</string>
     <string name="web_dialog_confid_rememore">Mémoriser mon choix et ne plus demander</string>
     <string name="web_search">Rechercher un eNB</string>
     <string name="web_no_data_msg">Zone sans données. Tout partage de logs sera bienvenu. À vous de jouer !</string>
@@ -221,8 +268,8 @@
 
     <!-- EA Stumbler -->
     <string name="stumbler_btn_txt">Activer l\'enregistrement d\'observations</string>
-    <string name="stumbler_display_today">Données d\'Aujourd\'hui</string>
-    <string name="stumbler_abstract">observation(s). Aujourd\'hui :</string>
+    <string name="stumbler_display_today">Données d\'aujourd\'hui</string>
+    <string name="stumbler_abstract">observation(s). aujourd\'hui :</string>
     <string name="stumbler_no_data_today">Pas de données aujourd\'hui</string>
     <string name="stumbler_rest2send">Reste à envoyer :</string>
     <string name="stumbler_rest2exp">Reste à exporter :</string>
@@ -237,6 +284,11 @@
     <string name="stumbler_upload_in_progress">Téléversement en cours…</string>
     <string name="stumbler_upload_success">Observations envoyées avec succès !</string>
     <string name="stumbler_export_reset_indic">Reset indicateur d\'export</string>
+    <string name="stumbler_info_mls_format"><![CDATA[Plus d\'infos sur le format d\'envoi MLS <a href=\'https://ichnaea.readthedocs.io/en/stable/api/geosubmit2.html\'>https://ichnaea.readthedocs.io/en/stable/api/geosubmit2.html</a>]]></string>
+    <string name="stumbler_obs_details">Détails de l\'observation</string>
+    <string name="stumbler_delete_all">Éffacer signal ?</string>
+    <string name="stumbler_delete_all_descr">Ceci va éffacer toutes les données de signal (observations). Les logs ne seront pas impactés.\n\nVoulez-vous continuer ?</string>
+    <string name="stumbler_data_deleted">Observations supprimées</string>
 
     <!-- Check BDD -->
     <string name="ck_bdd_btn_download">Télécharger</string>
@@ -254,16 +306,19 @@
 
     <!-- Export -->
     <string name="exp_header_upload">Partage en ligne</string>
-    <string name="exp_em">Export NetMonster PT…</string>
+    <string name="exp_em">Export Portugal Towers…</string>
     <string name="exp_em2">2/2 Envoi vers bakertelekom</string>
     <string name="exp_ea">Export EA en cours...</string>
     <string name="exp_ea1">1/2 Préparation des données</string>
     <string name="exp_ea2">2/2 Envoi vers enb-analytics.fr</string>
     <string name="exp_cl">Export CellularFR…</string>
     <string name="exp_cl2">2/2 Envoi vers cellularfr.fr</string>
+    <string name="exp_lu">Export NM-Letzebuerg…</string>
+    <string name="exp_lu2">2/2 Envoi vers lu.netmonster-db.com</string>
     <string name="exp_new_cells">nouvelles cellules</string>
-    <string name="exp_nm_progress">Export en cours...</string>
+    <string name="exp_in_progress">Export en cours...</string>
     <string name="exp_ntm">Export au format NetMonster</string>
+    <string name="exp_csv">Export au format CSV</string>
     <string name="cell_telever">cellules téléversées</string>
     <string name="cell_export">cellules écrites</string>
     <string name="data_telever_thanks">Merci !</string>
@@ -276,7 +331,6 @@
     <string name="no_data">Base vide !</string>
     <string name="cell_collect">cellules collectées</string>
     <string name="cell_shared">cellules partagées</string>
-    <string name="cell_collect_p2">eNB)</string>
     <string name="cell_collect_up">à envoyer</string>
     <string name="supp_identif">Identifications</string>
     <string name="supp_hyp">Hypothèses&#160;&#160;(</string>
@@ -287,19 +341,26 @@
     <string name="exp_ident_wait">identification(s) disponible(s)</string>
     <string name="exp_data_wait">donnée(s) disponible(s)</string>
     <string name="exp_csv_snack">Données exportées !</string>
-    <string name="exp_trcs_snack">Traces exportées !</string>
+    <string name="exp_cells_exported">Cellules exportées !</string>
+    <string name="exp_trcs_exported">Traces exportées !</string>
     <string name="exp_sql_snack">Base SQLite exportée !</string>
     <string name="exp_up_ea_msg">Partagez vos logs vers le projet afin d\'améliorer la base de données. Les résultats, si exploitables seront visibles sur le site et l\'appli.\nCellules = important pour le projet. Les identifications, elles, ne sont pas systématiquement prises en compte</string>
     <string name="exp_up_3rd_msg">Partage vers des projets tierce-partie. Pour toute question ou problèmes, veuillez les contacter directement</string>
-    <string name="exp_data_roaming">Indisponible</string>
     <string name="exp_error_3rd_party">Erreur. Envoi vers serveur tiers&#160;: voir directement avec le projet concerné</string>
     <string name="exp_export_info_title">Cellules partagées</string>
+    <string name="exp_export_sqlite">Export base SQLite</string>
+    <string name="exp_export_ntm">Export fichier .ntm</string>
+    <string name="exp_destination_folder">Dossier de destination :</string>
+    <string name="exp_open_folder">Ouvrir le dossier</string>
+    <string name="exp_ntm_only_identif">Uniquement les supports identifiés</string>
+    <string name="exp_ntm_only_new">Uniquement les eNB pas dans la base NM</string>
+    <string name="exp_ntm_add_id_sup">Ajouter suffixe # Support</string>
+
 
     <!-- Analytics -->
     <string name="aa_not_identified">non identifié</string>
     <string name="aa_found_single">trouvé</string>
     <string name="aa_found">trouvés</string>
-    <string name="aa_no_data">Pas de données</string>
     <string name="aa_weak_data">Données insuffisantes</string>
     <string name="aa_limited_data">Capturez plus de données</string>
     <string name="aa_ambiguous">Ambiguïté</string>
@@ -319,6 +380,14 @@
     <string name="id_rech_ta">Recherche via données TA</string>
     <string name="id_reinit_map">Réinitialiser la carte</string>
     <string name="id_magic_failed">Recherche infructueuse ou support déjà attribué. Il va falloir pousser les investigations ;-)</string>
+    <string name="id_rech_manu_msg">Sélectionner un support ou déplacer la carte</string>
+    <string name="id_searching_obs">Recherche d\'observations…</string>
+    <string name="id_new_tower_disclaimer">À utiliser en dernier recours !\n\nL\'ajout d\'un support hors base ANFR ne relève pas du projet eNB Analytics : il ne sera pas pris en compte en cas de partage en ligne.\n\nRapprochez-vous de la team d\'indexation :\nOrange : CellularFr\nSFR : eNb Mobile\nFree : RNC Mobile\nBouygues : BTRNC\n\nLe but du projet eNB Analytics est l\'analyse automatisée de données couvrant 4 opérateurs nationaux ainsi que les Outre-mer.\nLe tout est géré par une personne, incluant le développement de l\'appli Android, le backend serveur et le site web. Il n\'est pas possible de consacrer du temps pour faire de la modération et ce serait contre-productif de faire doublon avec les teams d\'indexation.</string>
+    <string name="id_new_tower_txt">Placer le support sur la carte. Augmenter le zoom pour plus de précision</string>
+    <string name="id_canceled_action">Action annulée</string>
+    <string name="id_understood">J\'ai compris</string>
+    <string name="id_new_tower_type_name">Saisir un nom</string>
+    <string name="id_new_tower_new_tower">Nouveau support</string>
 
     <!-- File explorer -->
     <string name="file_expl_open_text">Voir (Texte)</string>
@@ -328,6 +397,7 @@
     <string name="file_expl_favorite_folder">Dossier favori</string>
     <string name="file_expl_parent_folder">Dossier parent</string>
     <string name="file_expl_use_android_explorer">Utiliser l\'explorateur Android</string>
+    <string name="file_expl_ask_delete_descr">Éffacer le fichier</string>
     <string name="file_rdr_large_file_msg_p1">Seules les</string>
     <string name="file_rdr_large_file_msg_p2">premières lignes sont affichées</string>
     <string name="file_rdr_action_goto_end">Voir la fin</string>
@@ -345,8 +415,8 @@
     <string name="misc_delete">Éffacer</string>
     <string name="misc_cell">Cellule</string>
     <string name="misc_cells">Cellules</string>
-    <string name="misc_support">Support</string>
-    <string name="misc_supports">Supports</string>
+    <string name="misc_tower">Antenne</string>
+    <string name="misc_towers">Antennes</string>
     <string name="misc_confident">Confidentialité</string>
     <string name="misc_order_mode">Mode de tri</string>
     <string name="misc_search">Rechercher</string>
@@ -356,7 +426,6 @@
     <string name="misc_file_format_mismatch">Format de fichier incorrect</string>
     <string name="misc_pause">Pause</string>
     <string name="misc_auto">Automatique</string>
-    <string name="misc_towers">Antennes</string>
     <string name="misc_provider">Opérateur</string>
     <string name="misc_position">Position</string>
     <string name="misc_catched">Capturé</string>
@@ -368,6 +437,7 @@
     <string name="misc_display">Afficher</string>
     <string name="misc_error">Erreur</string>
     <string name="misc_connect_error">Erreur de connexion</string>
+    <string name="misc_server_endpoint">Serveur de destination</string>
     <string name="misc_custom_server">Serveur personnalisé</string>
     <string name="misc_freq_approved">projet approuvé</string>
     <string name="misc_freq_activated">activé le</string>
@@ -382,7 +452,21 @@
     <string name="misc_choose_file">Choisir fichier</string>
     <string name="misc_height">Hauteur</string>
     <string name="misc_identified">Identifié</string>
+    <string name="misc_hypothese_s">Hypothèse(s)</string>
+    <string name="misc_other_hypothese_s">Autres hypothèse(s)</string>
+    <string name="misc_attribute_to">Attribuer au</string>
     <string name="misc_available">Disponible</string>
+    <string name="misc_deprecated">Déprécié</string>
+    <string name="misc_incorrect_url">URL incorrecte</string>
+    <string name="misc_unavailable">Indisponible</string>
+    <string name="misc_no_data">Pas de données</string>
+    <string name="misc_normal">Normal</string>
+    <string name="misc_with">avec</string>
+    <string name="misc_observations_s">Observation(s)</string>
+    <string name="misc_impossible_action">Action impossible</string>
+    <string name="misc_samples">échantillons</string>
+    <string name="misc_important">Important</string>
+
 
     <!-- Density -->
     <string name="density_mbs_area">Zone</string>					        <!-- max 12 caractères -->
@@ -414,6 +498,7 @@
     <string name="first_screen_p2_bis">L\'appli affichera des hypothèses pas forcément fiables au début, car ça dépend des données disponibles. Ces hypothèses seront automatiquement recalculées au fur et à mesure ; d\'où l\'importance de capturer de nouvelles données et ne pas se précipiter pour &quot;identifier&quot;.</string>
     <string name="first_screen_p3_header">Communautaire</string>
     <string name="first_screen_p3">Sans données, cette application et le projet n\'éxisteraient pas. Il est recommandé de partager vos cellules afin de pouvoir en faire profiter les autres utilisateurs de l\'appli et/ou visiteurs du site.</string>
+    <string name="first_screen_p3a">- Le projet est bénévole et totalement désinteressé.\n- Si vous rencontrez des difficultés ou un bug, veuillez me contacter. Les coordonnées sont disponibles dans la section Aide et la fenêtre à propos.\n- Cette application est à destination d\'un public averti et/ou motivé. De la documentation est disponible sur le site internet.\n- Cette application est gratuite et sans publicités. Son développement nécéssite un travail important. Ce modèle a ses limites, donc des imperfections subsistent.</string>
     <string name="first_screen_p4_header">Localisation exacte</string>
     <string name="first_screen_p4">Cette application a besoin des permissions localisation exacte et Appels téléphoniques pour permettre le monitoring radio et géolocaliser les cellules capturées.</string>
     <string name="first_screen_p5">La localisation est utilisée seulement quand l\'enregistrement est actif. Une notification est affichée pour vous en informer.</string>
