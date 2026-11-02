@@ -45,6 +45,8 @@
     <string name="action_changelog">Ver registro de cambios</string>
     <string name="action_export_csv">Exportar a CSV</string>
     <string name="action_show_details">Mostrar detalles</string>
+    <string name="action_goto_website">Sitio web</string>
+    <string name="action_privacy_zone">Zona de privacidad</string>
     <string name="action_quit">Salir</string>
 
     <!-- Settings -->
@@ -78,13 +80,11 @@
     <string name="setting_unstable_header">Función(es) experimental(es)</string>
     <string name="setting_bypass_header">Omitir la base de datos de NM/EA</string>
     <string name="setting_bypass_descr">Si está habilitado, la aplicación ignorará los resultados de la base de datos.</string>
-    <string name="setting_api_key_header">Clave API</string>
+    <string name="setting_api_key_header">eNB analytics Clave API</string>
     <string name="setting_api_key_descr">Para identificarse como colaborador del proyecto de servicio de localización (opcional)</string>
     <string name="setting_api_key_descr_err_msg">Formato incorrecto (predeterminado 1000000a)</string>
     <string name="setting_recommended_setting">Configuración recomendada:</string>
     <string name="setting_msg_pseudo_length">El apodo está limitado a 20 caracteres</string>
-    <string name="setting_bdd_source_path">URL de servidor personalizada</string>
-    <string name="setting_bdd_source_path_descr">URL del archivo de índice</string>
     <string name="setting_unstable_descr">Habilitar funciones en desarrollo. Precaución: Riesgo de fallos, pérdida de datos, etc.</string>
     <string name="setting_legacy_monitor_descr">Restaure el monitor de la generación anterior (v4/v5.3). Reinicie la aplicación.</string>
 
@@ -176,6 +176,7 @@
     <string name="main_analysis_in_progress">Análisis…</string>
     <string name="main_calc_hint">eNB/gNB o LCID</string>
     <string name="main_exported_to">Exportado a</string>
+    <string name="main_more_info_3rd_project">Encuentra más información sobre este proyecto en su sitio web</string>
 
 
     <!-- Discover -->
@@ -195,6 +196,9 @@
     <string name="discover_zoom_btn">Zoom +</string>
     <string name="discover_zoom_limit_msg">No se muestran todas las antenas. Por favor, haga zoom.</string>
     <string name="discover_freq_filter">Filtrado de frecuencia</string>
+    <string name="discover_click_privacy_zone">Haz clic en el mapa para definir una zona privada (sin compartir datos)</string>
+    <string name="discover_delete_privacy_zone">¿Eliminar la zona privada existente?</string>
+    <string name="discover_privacy_zone_done">Zona privada registrada con éxito</string>
 
     <!-- Monitor data -->
     <string name="monitor_data_export_toast">medidas escritas en el archivo</string>
@@ -295,6 +299,9 @@
 
     <!-- Export -->
     <string name="exp_header_upload">Compartir en línea</string>
+    <string name="exp_header_logs">Datos móviles (logs)</string>
+    <string name="exp_header_traces">Datos de señal (Observaciones)</string>
+    <string name="exp_traces_ready">observación(es) disponible(s)</string>
     <string name="exp_ea">Exportación EA en curso...</string>
     <string name="exp_ea1">1/2 Preparación de datos</string>
     <string name="exp_ea2">2/2 Enviar a enb-analytics.fr</string>
@@ -327,7 +334,7 @@
     <string name="exp_trcs_exported">¡Trazas exportadas!</string>
     <string name="exp_cells_exported">¡Células exportadas!</string>
     <string name="exp_sql_snack">¡Base SQLite exportada!</string>
-    <string name="exp_up_ea_msg">Comparte tus registros con el proyecto para mejorar la base de datos. Los resultados, si son utilizables, se verán en el sitio web y la aplicación.\nLas celdas son importantes para el proyecto. Sin embargo, las identificaciones no se tienen en cuenta sistemáticamente.</string>
+    <string name="exp_up_ea_msg">Comparte tus registros con el proyecto para mejorar la base de datos. Los resultados, si son utilizables, se verán en el sitio web y la aplicación.</string>
     <string name="exp_up_3rd_msg">Compartir con proyectos de terceros. Si tiene alguna pregunta o problema, contáctelos directamente.</string>
     <string name="exp_error_3rd_party">Error. Envío a servidor de terceros: consulte directamente con el proyecto en cuestión.</string>
     <string name="exp_export_info_title">Células compartidas</string>
@@ -336,6 +343,7 @@
     <string name="exp_ntm_only_identif">Únicamente las antenas identificadas</string>
     <string name="exp_ntm_only_new">Solo los eNB que no están en la base NM</string>
     <string name="exp_ntm_add_id_sup">Añadir el sufijo #Support</string>
+    <string name="exp_import_signal_descr">Permite importar las observaciones (datos de señal/TA) capturadas con esta aplicación. Las observaciones no tienen relación con los registros (logs) ni con las identificaciones.\n\nImporte exclusivamente un archivo generado por esta aplicación.</string>
 
     <!-- Analytics -->
     <string name="aa_not_identified">no identificado</string>
@@ -447,6 +455,7 @@ Todo el proyecto es gestionado por una sola persona, por lo que no es posible de
     <string name="misc_impossible_action">Acción imposible</string>
     <string name="misc_samples">muestras</string>
     <string name="misc_important">Importante</string>
+    <string name="misc_private">Privado</string>
 
 
     <!-- Density -->
