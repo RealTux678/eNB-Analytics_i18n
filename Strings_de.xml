@@ -45,6 +45,8 @@
     <string name="action_changelog">Änderungsprotokoll ansehen</string>
     <string name="action_export_csv">CSV exportieren</string>
     <string name="action_show_details">Details anzeigen</string>
+    <string name="action_goto_website">Website</string>
+    <string name="action_privacy_zone">Privatsphärenzone</string>
     <string name="action_quit">Aussteigen</string>
 
     <!-- Settings -->
@@ -79,7 +81,7 @@
     <string name="setting_unstable_header">Experimentelle Funktion(en)</string>
     <string name="setting_bypass_header">NM/EA-Datenbankumgehung</string>
     <string name="setting_bypass_descr">Wenn diese Option aktiviert ist, ignoriert die App Ergebnisse aus der Datenbank.</string>
-    <string name="setting_api_key_header">API-Schlüssel</string>
+    <string name="setting_api_key_header">eNB analytics API-Schlüssel</string>
     <string name="setting_api_key_descr">Um sich als Mitwirkender am Standortdienstprojekt zu identifizieren (optional)</string>
     <string name="setting_api_key_descr_err_msg">Falsches Format (Standard: 1000000a)</string>
     <string name="setting_recommended_setting">Empfohlene Einstellung:</string>
@@ -177,6 +179,7 @@
     <string name="main_analysis_in_progress">Analyse…</string>
     <string name="main_calc_hint">eNB/gNB oder LCID</string>
     <string name="main_exported_to">Exportiert nach</string>
+    <string name="main_more_info_3rd_project">Weitere Informationen zu diesem Projekt finden Sie auf deren Website</string>
 
 
     <!-- Discover -->
@@ -196,6 +199,9 @@
     <string name="discover_zoom_btn">Heranzoomen</string>
     <string name="discover_zoom_limit_msg">Es werden nicht alle Antennen angezeigt. Bitte zoomen Sie hinein.</string>
     <string name="discover_freq_filter">Frequenzfilterung</string>
+    <string name="discover_click_privacy_zone">Klicken Sie auf die Karte, um einen privaten Bereich festzulegen (keine Datenweitergabe) </string>
+    <string name="discover_delete_privacy_zone">Bestehenden privaten Bereich löschen?</string>
+    <string name="discover_privacy_zone_done">Privatbereich erfolgreich registriert</string>
 
     <!-- Monitor data -->
     <string name="monitor_data_export_toast">Eintragung geschrieben in die Datei</string>
@@ -257,7 +263,6 @@
 
 
 
-
     <!-- EA Stumbler -->
     <string name="stumbler_btn_txt">Beobachtungsaufzeichnung aktivieren</string>
     <string name="stumbler_display_today">Heutige Daten</string>
@@ -298,6 +303,9 @@
 
     <!-- Export -->
     <string name="exp_header_upload">Online teilen</string>
+    <string name="exp_header_logs">Mobilfunkdaten (logs)</string>
+    <string name="exp_header_traces">Signaldaten (Beobachtungen)</string>
+    <string name="exp_traces_ready">verfügbare Beobachtung(en)</string>
     <string name="exp_em">Export Portugal Towers…</string>
     <string name="exp_em2">2/2 Senden Sie an bakertelekom</string>
     <string name="exp_ea">Export EA en cours...</string>
@@ -343,6 +351,7 @@
     <string name="exp_ntm_only_identif">Nur die identifizierten Antennen</string>
     <string name="exp_ntm_only_new">Nur die eNBs, die nicht in der NM-Datenbank enthalten sind.</string>
     <string name="exp_ntm_add_id_sup">Suffix #Support hinzufügen</string>
+    <string name="exp_import_signal_descr">Ermöglicht den Import von Beobachtungen (Signal-/TA-Daten), die mit dieser Anwendung erfasst wurden. Diese Beobachtungen haben nichts mit Logs oder Identifizierungen zu tun.\n\nImportieren Sie ausschließlich eine Datei, die von dieser Anwendung erstellt wurde.</string>
 
     <!-- Analytics -->
     <string name="aa_not_identified">unbekannt</string>
@@ -453,6 +462,7 @@
     <string name="misc_impossible_action">Aktion nicht möglich</string>
     <string name="misc_samples">proben</string>
     <string name="misc_important">Wichtig</string>
+    <string name="misc_private">Privat</string>
 
 
     <!-- Density -->
