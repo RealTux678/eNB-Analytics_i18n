@@ -45,14 +45,16 @@
     <string name="action_changelog">Consulter le journal des modifications</string>
     <string name="action_export_csv">Exporter en CSV</string>
     <string name="action_show_details">Voir les détails</string>
+    <string name="action_goto_website">Site web</string>
+    <string name="action_privacy_zone">Zone privée</string>
     <string name="action_quit">Quitter</string>
 
     <!-- Settings -->
     <string name="sub_settings_main">Général</string>
     <string name="sub_settings_monitor_map">Moniteur / Carte Locale</string>
     <string name="sub_settings_expert">Expert</string>
-    <string name="sub_settings_tc">Couplage Tower Collector (Android &lt; 14)</string>
-    <string name="sub_settings_tc_descr">Application disponible sur Play Store et F-Droid</string>
+    <string name="sub_settings_tc">Couplage Tower Collector</string>
+    <string name="sub_settings_tc_descr">Application disponible sur Play Store et F-Droid.</string>
     <string name="sub_settings_intents">Intents Android personnalisés</string>
     <string name="setting_pseudo_header">Pseudo</string>
     <string name="setting_pseudo_descr">Pour vous identifier en tant que contributeur</string>
@@ -82,15 +84,15 @@
     <string name="setting_unstable_header">Fonction(s) éxpérimentale(s)</string>
     <string name="setting_bypass_header">Bypass base NM/EA</string>
     <string name="setting_bypass_descr">Si activé, l\'appli ignorera les résultats de la base de donnée</string>
-    <string name="setting_api_key_header">Clef API</string>
+    <string name="setting_api_key_header">Clef API eNB analytics</string>
     <string name="setting_api_key_descr">Pour vous identifier en tant que contributeur au projet de service de localisation (facultatif)</string>
     <string name="setting_api_key_descr_err_msg">Format incorrect (1000000a par défaut)</string>
+    <string name="setting_tost_pseudo_header">Pseudo pour @t0stbrot.net</string>
+    <string name="setting_tost_pseudo_descr">Pour vous identifier auprès du projet @t0stbrot.net (facultatif)</string>
     <string name="setting_recommended_setting">Réglage recommandé :</string>
     <string name="setting_msg_pseudo_length">Le pseudo est limité à 20 caractères</string>
     <string name="setting_unstable_descr">Activer des fonctions en cours de développement. Attention : risques de crash, de perte de données, etc..</string>
-    <string name="setting_bdd_source_path">URL du serveur personnalisé</string>
-    <string name="setting_bdd_source_path_descr">URL vers le fichier d\'index</string>
-    <string name="setting_tc_start_stop_descr">Si activé, Tower Collector se lancera et s\'arrêtera en même temps que cette appli</string>
+    <string name="setting_tc_start_stop_descr">Si activé, Tower Collector se lancera et s\'arrêtera en même temps que cette appli. Restrictions à partir d\'Android 14</string>
     <string name="setting_auto_up_descr">Uploader les données à l\'arrêt de l\'enregistrement selon les paramètres définis dans TC</string>
     <string name="setting_enable_intents_header">Activer les intents personnalisés</string>
     <string name="setting_legacy_monitor_descr">Rétablir le moniteur ancienne génération (v4/v5.3). Relancer l\'appli</string>
@@ -178,13 +180,14 @@
     <string name="main_import_in_progress">Import en cours…</string>
     <string name="main_import_cells">Import cellules (logs)</string>
     <string name="main_import_identif">Import Identifications</string>
-    <string name="main_import_signal">Import observations</string>
+    <string name="main_import_signal">Import traces signal</string>
     <string name="main_export_cells">Export cellules (logs)</string>
     <string name="main_export_identif">Export identifications</string>
-    <string name="main_export_signal">Export observations</string>
+    <string name="main_export_signal">Export traces signal</string>
     <string name="main_analysis_in_progress">Analyse…</string>
     <string name="main_calc_hint">eNB/gNB ou LCID</string>
     <string name="main_exported_to">Exporté vers</string>
+    <string name="main_more_info_3rd_project">Vous trouverez plus d\'infos sur ce projet sur leur site web</string>
 
 
     <!-- Discover -->
@@ -204,6 +207,9 @@
     <string name="discover_zoom_btn">Zoomer</string>
     <string name="discover_zoom_limit_msg">Certains supports ne sont pas affichés. Veuillez zoomer en avant</string>
     <string name="discover_freq_filter">Filtrage par fréquence</string>
+    <string name="discover_click_privacy_zone">Cliquez sur la carte pour définir une zone privée (pas de partage des données)</string>
+    <string name="discover_delete_privacy_zone">Supprimer la zone privée existante ?</string>
+    <string name="discover_privacy_zone_done">Zone privée enregistrée avec succès</string>
 
     <!-- Monitor data -->
     <string name="monitor_data_export_toast">mesures écrites dans le fichier</string>
@@ -306,6 +312,9 @@
 
     <!-- Export -->
     <string name="exp_header_upload">Partage en ligne</string>
+    <string name="exp_header_logs">Données cellulaires (logs)</string>
+    <string name="exp_header_traces">Données de signal (Observations)</string>
+    <string name="exp_traces_ready">observation(s) disponible(s)</string>
     <string name="exp_em">Export Portugal Towers…</string>
     <string name="exp_em2">2/2 Envoi vers bakertelekom</string>
     <string name="exp_ea">Export EA en cours...</string>
@@ -344,7 +353,7 @@
     <string name="exp_cells_exported">Cellules exportées !</string>
     <string name="exp_trcs_exported">Traces exportées !</string>
     <string name="exp_sql_snack">Base SQLite exportée !</string>
-    <string name="exp_up_ea_msg">Partagez vos logs vers le projet afin d\'améliorer la base de données. Les résultats, si exploitables seront visibles sur le site et l\'appli.\nCellules = important pour le projet. Les identifications, elles, ne sont pas systématiquement prises en compte</string>
+    <string name="exp_up_ea_msg">Partagez vos logs vers le projet afin d\'améliorer la base de données. Les résultats, si exploitables seront visibles sur le site et l\'appli.</string>
     <string name="exp_up_3rd_msg">Partage vers des projets tierce-partie. Pour toute question ou problèmes, veuillez les contacter directement</string>
     <string name="exp_error_3rd_party">Erreur. Envoi vers serveur tiers&#160;: voir directement avec le projet concerné</string>
     <string name="exp_export_info_title">Cellules partagées</string>
@@ -355,6 +364,7 @@
     <string name="exp_ntm_only_identif">Uniquement les supports identifiés</string>
     <string name="exp_ntm_only_new">Uniquement les eNB pas dans la base NM</string>
     <string name="exp_ntm_add_id_sup">Ajouter suffixe # Support</string>
+    <string name="exp_import_signal_descr">Permet de restaurer les observations (données de signal/TA) capturées avec cette application. Les observation n\'ont rien à voir avec les logs ou les identifications.\n\nImporter exclusivement un fichier généré par cette application.</string>
 
 
     <!-- Analytics -->
@@ -466,6 +476,7 @@
     <string name="misc_impossible_action">Action impossible</string>
     <string name="misc_samples">échantillons</string>
     <string name="misc_important">Important</string>
+    <string name="misc_private">Privé</string>
 
 
     <!-- Density -->
