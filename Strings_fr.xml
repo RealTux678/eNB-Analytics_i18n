@@ -6,6 +6,8 @@
     <string name="nav_monitor">Moniteur</string>
     <string name="nav_drive">Mode Voiture</string>
     <string name="nav_discover">Carte locale</string>
+    <string name="nav_map_short">Carte</string>
+    <string name="nav_more_short">Plus</string>
     <string name="nav_journal">Journal</string>
     <string name="nav_web">Carte en ligne</string>
     <string name="action_settings">Paramètres</string>
@@ -47,6 +49,7 @@
     <string name="action_show_details">Voir les détails</string>
     <string name="action_goto_website">Site web</string>
     <string name="action_privacy_zone">Zone privée</string>
+    <string name="action_force_record">Toujours enregistrer</string>
     <string name="action_quit">Quitter</string>
 
     <!-- Settings -->
@@ -84,7 +87,7 @@
     <string name="setting_unstable_header">Fonction(s) éxpérimentale(s)</string>
     <string name="setting_bypass_header">Bypass base NM/EA</string>
     <string name="setting_bypass_descr">Si activé, l\'appli ignorera les résultats de la base de donnée</string>
-    <string name="setting_api_key_header">Clef API eNB analytics</string>
+    <string name="setting_api_key_header">Clef API eNB Analytics</string>
     <string name="setting_api_key_descr">Pour vous identifier en tant que contributeur au projet de service de localisation (facultatif)</string>
     <string name="setting_api_key_descr_err_msg">Format incorrect (1000000a par défaut)</string>
     <string name="setting_tost_pseudo_header">Pseudo pour @t0stbrot.net</string>
@@ -171,12 +174,14 @@
     <string name="main_incorrect_input">Saisie ou opérateur incorrect</string>
     <string name="main_info_pci_range">Le PCI doit être compris entre 0 et 1007</string>
     <string name="main_missing_database">Base manquante</string>
+    <string name="main_missing_x_database">Base %1$s manquante</string>
     <string name="main_export_format">Format d\'export</string>
     <string name="main_deprecated_function">Fonction dépréciée</string>
     <string name="main_beta_function">Fonction en cours de developpement</string>
     <string name="main_label_speed_5char">Vit.</string>   <!-- max 5 caractères -->
     <string name="main_position_deleted">Position supprimée</string>
     <string name="main_observation_deleted">Observation supprimée</string>
+    <string name="main_observation_privacy">Observation marquée comme privée</string>
     <string name="main_import_in_progress">Import en cours…</string>
     <string name="main_import_cells">Import cellules (logs)</string>
     <string name="main_import_identif">Import Identifications</string>
@@ -188,6 +193,8 @@
     <string name="main_calc_hint">eNB/gNB ou LCID</string>
     <string name="main_exported_to">Exporté vers</string>
     <string name="main_more_info_3rd_project">Vous trouverez plus d\'infos sur ce projet sur leur site web</string>
+    <string name="main_unidentify_p1">Voulez-vous supprimer cette identification ?</string>
+    <string name="main_unidentify_p2">Ceci va effacer l\'enregistrement de la table d\'Identifications.\n\nLes cellules capturées (logs) ne seront pas effacées.</string>
 
 
     <!-- Discover -->
@@ -226,8 +233,7 @@
     <string name="jnl_mbs_delete_last_obs">Suppr. dernière observation</string>	<!-- max 27 caractères -->
     <string name="jnl_mbs_first_date">1ère visite</string>			        <!-- max 12 caractères -->
     <string name="jnl_mbs_capture">Capturé</string>			                <!-- max 12 caractères -->
-    <string name="jnl_delete_msg_p1">La cellule</string>
-    <string name="jnl_delete_msg_p2">va être supprimée dans quelques secondes</string>
+    <string name="jnl_delete_msg">La cellule %1$s va être supprimée dans quelques secondes</string>
     <string name="jnl_sort_date">Par date (défaut)</string>
     <string name="jnl_sort_egnb">Par e/gNB</string>
     <string name="jnl_sort_tower">Par # support</string>
@@ -295,6 +301,7 @@
     <string name="stumbler_delete_all">Éffacer signal ?</string>
     <string name="stumbler_delete_all_descr">Ceci va éffacer toutes les données de signal (observations). Les logs ne seront pas impactés.\n\nVoulez-vous continuer ?</string>
     <string name="stumbler_data_deleted">Observations supprimées</string>
+    <string name="stumbler_filter_provider">Filtrer par opérateur</string>
 
     <!-- Check BDD -->
     <string name="ck_bdd_btn_download">Télécharger</string>
@@ -398,6 +405,12 @@
     <string name="id_understood">J\'ai compris</string>
     <string name="id_new_tower_type_name">Saisir un nom</string>
     <string name="id_new_tower_new_tower">Nouveau support</string>
+    <string name="id_tower_x_assigned">Support #%1$d attribué</string>
+    <string name="id_tower_x_already_assigned">Erreur. Support #%1$d déjà attribué !</string>
+    <string name="id_no_cells_found">Aucune cellule trouvée</string>
+    <string name="id_ask_unassign">Dé-attribuer support ?</string>
+    <string name="id_already_identified">déjà identifié</string>
+    <string name="id_hyp_saved">Hypothèse enregistrée</string>
 
     <!-- File explorer -->
     <string name="file_expl_open_text">Voir (Texte)</string>
@@ -408,11 +421,16 @@
     <string name="file_expl_parent_folder">Dossier parent</string>
     <string name="file_expl_use_android_explorer">Utiliser l\'explorateur Android</string>
     <string name="file_expl_ask_delete_descr">Éffacer le fichier</string>
-    <string name="file_rdr_large_file_msg_p1">Seules les</string>
-    <string name="file_rdr_large_file_msg_p2">premières lignes sont affichées</string>
+    <string name="file_expl_incorrect_file">Type de fichier incorrect</string>
+    <string name="file_expl_file_x_copied">Fichier %1$s copié</string>
+    <string name="file_expl_file_x_deleted">Fichier %1$s éffacé</string>
+    <string name="file_rdr_large_file_msg">Seules les %1$d premières lignes sont affichées</string>
     <string name="file_rdr_action_goto_end">Voir la fin</string>
     <string name="file_rdr_action_line_break">Retour à la ligne</string>
     <string name="file_rdr_action_monospace">Police Monospace</string>
+    <string name="file_rdr_file_not_found">Fichier introuvable</string>
+    <string name="file_rdr_display_first_x_lines"> - - -  Voir les %1$d premières lignes  - - -</string>
+    <string name="file_rdr_display_last_x_lines"> - - -  Voir les %1$d dernières lignes  - - -</string>
 
     <!-- Miscellaneous -->
     <string name="misc_yes">Oui</string>    <!-- utilisé pour la détection langque fr -->
@@ -477,6 +495,11 @@
     <string name="misc_samples">échantillons</string>
     <string name="misc_important">Important</string>
     <string name="misc_private">Privé</string>
+    <string name="misc_anonymous">Anonyme</string>
+    <string name="misc_api_key">Clef API</string>
+    <string name="misc_no_filtering">Pas de filtrage</string>
+    <string name="misc_altitude">Altitude</string>
+    <string name="misc_clear_data">Effacer</string>
 
 
     <!-- Density -->
@@ -517,5 +540,6 @@
     <string name="next_screen_header">Comment ça fonctionne ?</string>
     <string name="next_screen_content"><![CDATA[Le but est de capturer le maximum de cellules lors de différents déplacements.<br><br>L\'appli affiche des hypothèses <b>pas forcément fiables</b>, car ça dépend des données disponibles. Ces hypothèses seront <b>automatiquement recalculées</b> au fur et à mesure ; d\'où l\'importance de capturer de nouvelles données et ne pas se précipiter pour \"identifier\".<br><br>Pensez à partager vos cellules afin de faire avancer le projet !]]></string>
 
-
+    <string name="onboarding_availability_title">Disponibilité</string>
+    <string name="onboarding_availability">Toutes les fonctionnalités sont disponibles en France, en Espagne, au Portugal, en Suisse et au Luxembourg. Le suivi et l’enregistrement des cellules LTE et NR sont disponibles partout.</string>
 </resources>
