@@ -6,6 +6,8 @@
     <string name="nav_monitor">Monitor</string>
     <string name="nav_drive">Modo Automóvel</string>
     <string name="nav_discover">Mapa local</string>
+    <string name="nav_map_short">Mapa</string>
+    <string name="nav_more_short">Mais</string>
     <string name="nav_journal">Registos</string>
     <string name="nav_web">Mapa online</string>
     <string name="action_settings">Definições</string>
@@ -47,12 +49,16 @@
     <string name="action_show_details">Mostrar detalhes</string>
     <string name="action_goto_website">Site</string>
     <string name="action_privacy_zone">Zona de privacidade</string>
+    <string name="action_force_record">Sempre grave</string>
     <string name="action_quit">Sair</string>
 
     <!-- Settings -->
     <string name="sub_settings_main">Geral</string>
     <string name="sub_settings_monitor_map">Monitor / Mapa local</string>
     <string name="sub_settings_expert">Especialista</string>
+    <string name="sub_settings_tc">Encadernação Tower Collector</string>
+    <string name="sub_settings_tc_descr">Aplicação disponível na Play Store e no F-Droid</string>
+    <string name="sub_settings_intents">Intents personalizados do Android</string>
     <string name="setting_pseudo_header">Nick</string>
     <string name="setting_pseudo_descr">Para se identificar como contribuidor</string>
     <string name="setting_theme_header">Tema</string>
@@ -69,6 +75,7 @@
     <string name="setting_dual_sim_descr">Para poder escolher qual o cartão SIM a utilizar (mesmo que exista apenas um)</string>
     <string name="setting_sim_to_use_header">SIM a utilizar para análise</string>
     <string name="setting_dual_monitoring_descr">Monitorize ambos os cartões SIM, se presentes</string>
+    <string name="setting_dual_logging_descr">Registe os dados de ambos os cartões SIM</string>
     <string name="setting_radio_lib_header">Biblioteca de rádio</string>
     <string name="setting_radio_lib_descr">Modelo de rádio a utilizar. ATENÇÃO: Alterar esta configuração desnecessariamente pode prejudicar a funcionalidade da aplicação.</string>
     <string name="setting_radio_delay_header">Período de aquisição</string>
@@ -80,12 +87,17 @@
     <string name="setting_unstable_header">Função(ões) experimental(ais)</string>
     <string name="setting_bypass_header">Ignorar a base de dados NM/EA</string>
     <string name="setting_bypass_descr">Se estiver ativado, a aplicação ignorará os resultados do banco de dados</string>
-    <string name="setting_api_key_header">eNB analytics Chave API</string>
+    <string name="setting_api_key_header">eNB Analytics Chave API</string>
     <string name="setting_api_key_descr">Para se identificar como colaborador do projeto de serviço de localização (opcional)</string>
     <string name="setting_api_key_descr_err_msg">Formato incorreto (padrão 1000000a)</string>
+    <string name="setting_tost_pseudo_header">"@t0stbrot.net nome do colaborador</string>
+    <string name="setting_tost_pseudo_descr">Para se identificar como colaborador do projeto @t0stbrot.net (opcional)</string>
     <string name="setting_recommended_setting">Configuração recomendada:</string>
     <string name="setting_msg_pseudo_length">O apelido está limitado a 20 caracteres</string>
     <string name="setting_unstable_descr">Ative recursos em desenvolvimento. Atenção: Risco de bloqueio, perda de dados, etc.</string>
+    <string name="setting_tc_start_stop_descr">Se estiver ativado, o Tower Collector iniciará e terminará simultaneamente com esta aplicação. Restrições a partir do Android 14</string>
+    <string name="setting_auto_up_descr">Faça o upload dos dados quando a gravação parar, de acordo com os parâmetros definidos em TC</string>
+    <string name="setting_enable_intents_header">Ativar intenções personalizadas</string>
     <string name="setting_legacy_monitor_descr">Restaure o monitor da geração anterior (v4/v5.3). Reinicie a aplicação.</string>
 
     <!-- Notification -->
@@ -160,12 +172,14 @@
     <string name="main_incorrect_input">Entrada ou operador incorreto</string>
     <string name="main_info_pci_range">o TAC deve estar entre 0 e 1007</string>
     <string name="main_missing_database">Base de dados ausente</string>
+    <string name="main_missing_x_database">Base de dados %1$s ausente</string>
     <string name="main_export_format">Formato de exportação</string>
     <string name="main_deprecated_function">Função obsoleta</string>
     <string name="main_beta_function">Função em desenvolvimento</string>
     <string name="main_label_speed_5char">Vlcd.</string>   <!-- max 5 caractères -->
     <string name="main_position_deleted">Posição excluída</string>
     <string name="main_observation_deleted">Observação excluída</string>
+    <string name="main_observation_privacy">Observação marcada como privada</string>
     <string name="main_import_in_progress">Importação em curso…</string>
     <string name="main_import_cells">Importar células (logs)</string>
     <string name="main_import_identif">Importar atribuições de antenas</string>
@@ -177,6 +191,8 @@
     <string name="main_calc_hint">eNB/gNB ou LCID</string>
     <string name="main_exported_to">Exportado para</string>
     <string name="main_more_info_3rd_project">Encontre mais informações sobre este projeto no seu site</string>
+    <string name="main_unidentify_p1">Deseja remover esta identificação?</string>
+    <string name="main_unidentify_p2">Isto removerá o registo da tabela de Identificações.\n\nAs células capturadas (logs) não serão apagadas.</string>
 
 
     <!-- Discover -->
@@ -215,8 +231,7 @@
     <string name="jnl_mbs_capture">Capturar</string>			               <!-- max 12 caractères -->
     <string name="jnl_mbs_first_date">1ª visita</string>
     <string name="jnl_mbs_last_date">Visitado</string>
-    <string name="jnl_delete_msg_p1">A célula</string>
-    <string name="jnl_delete_msg_p2">será eliminada em alguns segundos</string>
+    <string name="jnl_delete_msg">A célula %1$s será eliminada em alguns segundos</string>
     <string name="jnl_sort_date">Por data (padrão)</string>
     <string name="jnl_sort_egnb">Por e/gNB</string>
     <string name="jnl_sort_tower">Por antena</string>
@@ -346,6 +361,7 @@
     <string name="stumbler_delete_all">Apagar dados de sinal?</string>
     <string name="stumbler_delete_all_descr">Isto apagará todos os dados de sinal (observações). Os registos não serão afetados.\n\nDeseja continuar?</string>
     <string name="stumbler_data_deleted">Dados excluídos</string>
+    <string name="stumbler_filter_provider">Filtrar por fornecedor</string>
 
     <!-- Analytics -->
     <string name="aa_not_identified">não identificado</string>
@@ -378,6 +394,12 @@
     <string name="id_understood">Entendi</string>
     <string name="id_new_tower_type_name">Introduza um nome</string>
     <string name="id_new_tower_new_tower">Nova antena</string>
+    <string name="id_tower_x_assigned">Antena nº %1$d atribuída</string>
+    <string name="id_tower_x_already_assigned">Erro. Antena nº %1$d já está atribuída</string>
+    <string name="id_no_cells_found">Nenhuma célula encontrada</string>
+    <string name="id_ask_unassign">Desatribuir antena?</string>
+    <string name="id_already_identified">já identificado</string>
+    <string name="id_hyp_saved">Hipótese registada</string>
 
     <!-- File explorer -->
     <string name="file_expl_open_text">Ver (como texto)</string>
@@ -388,11 +410,16 @@
     <string name="file_expl_parent_folder">Pasta pai</string>
     <string name="file_expl_use_android_explorer">Use o Android explorer</string>
     <string name="file_expl_ask_delete_descr">Apagar o ficheiro</string>
-    <string name="file_rdr_large_file_msg_p1">Apenas as primeiras</string>
-    <string name="file_rdr_large_file_msg_p2">linhas são apresentadas</string>
+    <string name="file_expl_incorrect_file">Tipo de ficheiro incorreto</string>
+    <string name="file_expl_file_x_copied">Ficheiro %1$s copiado</string>
+    <string name="file_expl_file_x_deleted">Ficheiro %1$s excluído</string>
+    <string name="file_rdr_large_file_msg">Solo se muestran las %1$d primeras líneas</string>
     <string name="file_rdr_action_goto_end">Veja o final</string>
     <string name="file_rdr_action_line_break">Quebra de linha</string>
     <string name="file_rdr_action_monospace">Monoespaçada</string>
+    <string name="file_rdr_file_not_found">Ficheiro não encontrado</string>
+    <string name="file_rdr_display_first_x_lines"> - - -  Veja as primeiras %1$d linhas  - - -</string>
+    <string name="file_rdr_display_last_x_lines"> - - -  Ver as últimas %1$d linhas  - - -</string>
 
     <!-- Miscellaneous -->
     <string name="misc_yes">Sim</string>
@@ -457,6 +484,11 @@
     <string name="misc_samples">amostras</string>
     <string name="misc_important">Importante</string>
     <string name="misc_private">Privado</string>
+    <string name="misc_anonymous">Anônimo</string>
+    <string name="misc_api_key">Chave API</string>
+    <string name="misc_no_filtering">Sem filtragem</string>
+    <string name="misc_altitude">Altitude</string>
+    <string name="misc_clear_data">Limpar dados</string>
 
 
     <!-- Density -->
@@ -496,5 +528,8 @@
     <string name="first_screen_view_policy">Ver Política de Privacidade</string>
     <string name="next_screen_header">Como funciona?</string>
     <string name="next_screen_content"><![CDATA[O objetivo é capturar o máximo de células durante as suas viagens.<br><br>A aplicação mostra hipóteses que <b>não são necessariamente fiáveis</b>, porque dependem dos dados disponíveis. Estas suposições serão <b>recalculadas automaticamente</b>, daí a importância de captar novos dados e não se apressar a identificá-las.<br><br>Considere partilhar as suas células para ajudar a avançar com o projeto!]]></string>
-
+    <string name="exp_destination_folder">Pasta de destino:</string>
+    <string name="exp_open_folder">Abrir pasta</string>
+    <string name="onboarding_availability_title">Disponibilidade</string>
+    <string name="onboarding_availability">Todas as funcionalidades estão disponíveis em França, Espanha, Portugal, Suíça e Luxemburgo. A monitorização e o registo de células LTE e NR estão disponíveis em qualquer lugar.</string>
 </resources>
